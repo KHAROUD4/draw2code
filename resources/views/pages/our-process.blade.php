@@ -1,40 +1,24 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-	<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-	<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-	<!--[if gt IE 8]> <html class="no-js"> <![endif]-->
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content=" width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<base href="{{ url('/') }}/">
-        <meta name="description" content="Draw2code Expert graphic design, outsource graphic work, UX/UI, Branding, creative website design and development agencie located in India.">
-		<title>Our Process-Draw2Code - A creative UX/UI Design studio, Expert in Graphic Designing</title>
-    <!-- Fonts -->
-  	<link href="https://fonts.googleapis.com/css?family=Gilda+Display%7CMontserrat:400,700%7COpen+Sans" rel="stylesheet">
+        <meta name="description" content="Our four-phase engineering process: Discover, Define, Design, Deploy. See how Draw2Code engineers packaging and digital products for global markets.">
+		<title>Our Process | Draw2Code - Engineering Methodology</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Gilda+Display&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="addons/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-		  <!-- Icons -->
     <link href="css/icomoon.css" rel="stylesheet">
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="fonts/icomoon/style.css">
-    <!-- CSS assets -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="addons/Magnific-Popup/magnific-popup.css" rel="stylesheet">
-    <!-- LOAD JQUERY LIBRARY-->
 		<script src="js/plugins/jquery-3.2.1.min.js"></script>
-    <!-- Main theme stylesheet -->
     <link href="css/template.css" rel="stylesheet" type="text/css">
-
-		<!-- REVOLUTION STYLE SHEETS -->
 		<link rel="stylesheet" type="text/css" href="addons/revolution/css/settings.css">
-
-		<!-- REVOLUTION JS FILES -->
 		<script src="addons/revolution/js/jquery.themepunch.tools.min.js"></script>
 		<script src="addons/revolution/js/jquery.themepunch.revolution.min.js"></script>
-
-
-		<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
 		<script src="addons/revolution/js/extensions/revolution.extension.actions.min.js"></script>
 		<script src="addons/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
 		<script src="addons/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
@@ -44,423 +28,281 @@
 		<script src="addons/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 		<script src="addons/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
 		<script src="addons/revolution/js/extensions/revolution.extension.video.min.js"></script>
-		<script>function setREVStartSize(e){
-				try{ var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
-					if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})
-				}catch(d){console.log("Failure at Presize of Slider:"+d)}
-			};</script>
         <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f44dbb12-2da2-4798-94fb-f77efdc49897";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-        
-         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81178783-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-81178783-1');
 </script>
-        
 </head>
 
 <body>
 <div id="page_wrapper">
-	<!-- Responsive menu start -->
 	<ul class="cg__resMenu">
 		<li class="cg__resMenu-back">
 			<span class="cg__resMenu-backIcon glyphicon glyphicon-chevron-left"></span><a href="#" class="cg__resMenu-backLink">Back</a>
 		</li>
-		<li><a class="active" href="{{ route('home') }}"><span>Home</span></a></li>
-		<li>	<a href="{{ route('studio') }}"><span>Studio</span></a>
-		<li><a href="{{ route('our-process') }}"><span>Our process</span></a></li>
+		<li><a href="{{ route('home') }}"><span>Home</span></a></li>
+		<li><a href="{{ route('studio') }}"><span>Studio</span></a></li>
+		<li><a class="active" href="{{ route('our-process') }}"><span>Our Process</span></a></li>
 		<li><a href="{{ route('work') }}"><span>Work</span></a></li>
 		<li><a href="{{ route('contact') }}"><span>Contact</span></a></li>
 	</ul>
 
-	<!-- Responsive menu end -->
-
 	<header id="header" class="site-header site-header--absolute">
 		<div class="container siteheader-container large-container">
 			<div class="fxb-col fxb-basis-auto">
-				<div class="fxb-row site-header-row site-header-main ">
-						<!-- Logo column -->
-					<div class="fxb-col fxb fxb-start-x fxb-center-y fxb-basis-auto fxb-grow-0 fxb-sm-half ">
+				<div class="fxb-row site-header-row site-header-main">
+					<div class="fxb-col fxb fxb-start-x fxb-center-y fxb-basis-auto fxb-grow-0 fxb-sm-half">
 						<div id="logo-container" class="logo-container">
-							<h1 class="site-logo logo " id="logo">
+							<h1 class="site-logo logo" id="logo">
 								<a href="{{ route('home') }}" class="site-logo-anch">
-									<img class="logo-img site-logo-img" src="img-assets/logo.png" alt="Agency" title="Agency">
+									<img class="logo-img site-logo-img" src="img-assets/logo.png" alt="Draw2Code" title="Draw2Code">
 								</a>
 							</h1>
+							<p class="logo-tagline">Packaging &amp; Product Engineering Powerhouse.</p>
 						</div>
 					</div>
-							<p class="logo-tagline">Packaging & Product Engineering Studio.</p>
-					 <!-- Right column with navigation -->
-					 <div class="fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-col-right site-header-main-right">
-						 <div class="fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-main-right-top">
-
-										<!-- menu trigger -->
-									 <div class="sh-component menu-wrapper">
-
-											<div class="cg__menuWrapper">
-												<div class="cg__mainMenu-trigger">
-													<a href="#" class="cg__menuBurger">
-														<span></span>
-														<span></span>
-														<span></span>
-													</a>
-												</div><!--/.cg__mainMenu-trigger-->
-
-												<ul class="cg__mainMenu clearfix">
-													<li><a class="active" href="{{ route('home') }}"><span>Home</span></a></li>
-													<li><a href="{{ route('studio') }}"><span>Studio</span></a></li>
-													<li><a href="{{ route('our-process') }}"><span>Our process</span></a></li>
-													<li><a href="{{ route('work') }}"><span>Work</span></a></li>
-													<li><a href="{{ route('contact') }}"><span>Contact</span></a></li>
-												</ul><!--/.cg__mainMenu-->
-
-											</div><!--/.cg__menuWrapper-->
-
-									 </div>
-
-					 </div>
-				 </div><!--end right column-->
-			 </div><!--end flex row-->
+					<div class="fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-col-right site-header-main-right">
+						<div class="fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-main-right-top">
+							<div class="sh-component menu-wrapper">
+								<div class="cg__menuWrapper">
+									<div class="cg__mainMenu-trigger">
+										<a href="#" class="cg__menuBurger"><span></span><span></span><span></span></a>
+									</div>
+									<ul class="cg__mainMenu clearfix">
+										<li><a href="{{ route('home') }}"><span>Home</span></a></li>
+										<li><a href="{{ route('studio') }}"><span>Studio</span></a></li>
+										<li><a class="active" href="{{ route('our-process') }}"><span>Our Process</span></a></li>
+										<li><a href="{{ route('work') }}"><span>Work</span></a></li>
+										<li><a href="{{ route('contact') }}"><span>Contact</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
+
+	<!-- HERO -->
 	<div class="ag-subheader">
-
-				<div class="media-wrapper">
-						<div class="media-container media-header">
-							<div class="container-overlay">
-							<div class="bg-source bg-source--image" style="background-image: url(images/hero_05.jpg);">
-							</div>
-							<div class="bg-source img-overlay">
-							</div>
-						</div>
-						<div class="media-container-title txt-center">
-								<h1 class="txt-light">Our process
-								</h1>
-						</div>
-					</div>
+		<div class="media-wrapper">
+			<div class="media-container media-header">
+				<div class="container-overlay">
+					<div class="bg-source bg-source--image" style="background-image: url(images/hero_05.jpg);"></div>
+					<div class="bg-source img-overlay"></div>
 				</div>
-
-
-		<div class="ag-mask">
-			<div class="skew-mask">
+				<div class="media-container-title txt-center">
+					<span class="hero-slide__label" style="margin-bottom:20px;">Engineering Methodology</span>
+					<h1 class="txt-light">Our Process</h1>
+					<p class="work-hero-subtext">A systematic, engineer-led approach to every project. Four phases. Zero guesswork.</p>
+				</div>
 			</div>
 		</div>
-	</div><!--end subheader-->
-	<!-- start fancy section -->
-	<section class="ag-about-section small-section">
+		<div class="ag-mask"><div class="skew-mask"></div></div>
+	</div>
+
+	<!-- PROCESS STEPS -->
+	<section class="ag-about-section small-section scroll-reveal">
 		<div class="container custom_width">
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="ag-about pl-90 pr-90 pt-60 color-overlay--dark">
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="title-block title-block--center pb-80">
-								<h4 class="title-block__subtitle txt-light-transparent">OUR PROCESS</h4>
-								<h2 class="title-block__title txt-light">See how we work</h2>
-							</div>
-						</div>
-
-					</div>
-					<div class="row">
-
-						<div class="col-md-3 col-sm-6">
-
-							<div class="media-container media-container--process">
-								<div class="title-wrapper">
-								<div class="title-block title-block--process">
-									<h4 class="title-block__title">1.</h4>
-									<h3 class="title-block__subtitle txt-light">Discover</h3>
-									<p>As a UX consultant, our first step is always about gaining understanding & knowledge. We dig deep to know everything possible that will help us craft a better solution.</p>
-								</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="ag-about pl-90 pr-90 pt-60 d2c-dark-surface">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="title-block title-block--center pb-80">
+									<h4 class="title-block__subtitle txt-light-transparent">OUR ENGINEERING PROCESS</h4>
+									<h2 class="title-block__title txt-light">How We Engineer Products</h2>
 								</div>
 							</div>
-
 						</div>
-						<div class="col-md-3 col-sm-6">
-
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
 								<div class="media-container media-container--process">
 									<div class="title-wrapper">
 										<div class="title-block title-block--process">
-											<h4 class="title-block__title ">2.</h4>
+											<h4 class="title-block__title">1.</h4>
+											<h3 class="title-block__subtitle txt-light">Discover</h3>
+											<p>Deep-dive research into your market, product requirements, shipping constraints, and compliance needs. We map every variable before a single line is drawn.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="media-container media-container--process">
+									<div class="title-wrapper">
+										<div class="title-block title-block--process">
+											<h4 class="title-block__title">2.</h4>
 											<h3 class="title-block__subtitle txt-light">Define</h3>
-											<p>We draw insights from the research data and craft a product roadmap that solves problems like no other existing products.</p>
+											<p>We synthesize research into a technical specification and product roadmap. Structural parameters, material selection, and compliance frameworks are locked in.</p>
 										</div>
-										</div>
-							</div>
-
-					</div>
-					<div class="col-md-3 col-sm-6">
-
-
-							<div class="media-container media-container--process">
-								<div class="title-wrapper">
-									<div class="title-block title-block--process">
-										<h4 class="title-block__title">3.</h4>
-										<h3 class="title-block__subtitle txt-light">Design</h3>
-										<p >It's all about bringing emotions to logic. We map empathy and cognitive science to derive on a product that is not just usable but appealing as well.</p>
-									</div>
-									</div>
-							</div>
-
-					</div>
-					<div class="col-md-3 col-sm-6">
-
-						<div class="media-container media-container--process fancy-background">
-								<div class="title-wrapper">
-									<div class="title-block title-block--process2">
-										<h4 class="title-block__title txt-light">4.</h4>
-										<h3 class="title-block__subtitle txt-light">Develop</h3>
-										<p class="txt-light">We give life to designs and make them a reality. The data is converted to graphical interface for the user to view and interact with it.
-
-</p>
 									</div>
 								</div>
 							</div>
-
-					</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="media-container media-container--process">
+									<div class="title-wrapper">
+										<div class="title-block title-block--process">
+											<h4 class="title-block__title">3.</h4>
+											<h3 class="title-block__subtitle txt-light">Design</h3>
+											<p>Engineering meets aesthetics. We create structural prototypes, graphic systems, and digital interfaces -- iterating until every detail meets production standards.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="media-container media-container--process" style="background-color:rgba(200,16,46,0.15);">
+									<div class="title-wrapper">
+										<div class="title-block title-block--process2">
+											<h4 class="title-block__title txt-light">4.</h4>
+											<h3 class="title-block__subtitle txt-light">Deploy</h3>
+											<p class="txt-light">Production oversight, quality audits, vendor coordination, and global logistics. We manage the build until your product is in-market and performing.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
-</div>
 	</section>
-<section class="pb-100 pt-100">
-	<div class="container large-container">
-		<div class="row">
-			<div class="col-md-4 col-sm-4">
-				<div class="column-wrapper">
-					<div class="ag-iconbox ag-iconbox--style3">
-						<div class="ag-iconbox__icon-wrapper">
-							<span class="ag-iconbox__icon icon-development"></span>
-						</div>
-						<div class="ag-iconbox__content-wrapper">
+
+	<!-- VALUE PROPS -->
+	<section class="pb-100 pt-100 scroll-reveal">
+		<div class="container large-container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4">
+					<div class="column-wrapper">
+						<div class="ag-iconbox ag-iconbox--style3">
+							<div class="ag-iconbox__icon-wrapper">
+								<span class="ag-iconbox__icon icon-development"></span>
+							</div>
+							<div class="ag-iconbox__content-wrapper">
 								<div class="ag-iconbox__title-wrapper">
-									<h3 class="ag-iconbox__title">
-										SUPERLATIVE PROCESS
-									</h3>
+									<h3 class="ag-iconbox__title">ENGINEER-LED RIGOR</h3>
 								</div>
-							<div class="ag-iconbox__wrapper ag-iconbox__desc-wrapper">
-									<p class="ag-iconbox__desc">Our innovative tech-driven processes blend efficiency and effectiveness that drives value to your business.
-
-</p>
+								<div class="ag-iconbox__wrapper ag-iconbox__desc-wrapper">
+									<p class="ag-iconbox__desc">Every project is managed by engineers with deep domain expertise in structural packaging, materials science, and production engineering.</p>
 								</div>
+							</div>
 						</div>
 					</div>
-					</div>
-			</div>
-
-			<div class="col-md-4 col-sm-4">
-				<div class="column-wrapper">
-					<div class="ag-iconbox ag-iconbox--style3">
-						<div class="ag-iconbox__icon-wrapper">
-							<span class="ag-iconbox__icon icon-layers"></span>
-						</div>
-						<div class="ag-iconbox__content-wrapper">
-								<div class="ag-iconbox__title-wrapper">
-									<h3 class="ag-iconbox__title">
-										INNOVATION AND EMOTIONS
-									</h3>
-								</div>
-							<div class="ag-iconbox__wrapper ag-iconbox__desc-wrapper">
-									<p class="ag-iconbox__desc">Driven by factual research we craft progressive yet empathetic solutions.
-
-</p>
-								</div>
-						</div>
-					</div>
-					</div>
-			</div>
-
-			<div class="col-md-4 col-sm-4">
-				<div class="column-wrapper">
-					<div class="ag-iconbox ag-iconbox--style3">
-						<div class="ag-iconbox__icon-wrapper">
-							<span class="ag-iconbox__icon icon-webdesign"></span>
-						</div>
-						<div class="ag-iconbox__content-wrapper">
-								<div class="ag-iconbox__title-wrapper">
-									<h3 class="ag-iconbox__title">
-										EXCELLENCE IS OUR HABIT
-									</h3>
-								</div>
-							<div class="ag-iconbox__wrapper ag-iconbox__desc-wrapper">
-									<p class="ag-iconbox__desc">We settle for nothing less! We create designs to inspire and attract.</p>
-								</div>
-						</div>
-					</div>
-					</div>
-			</div>
-
-		</div>
-	</div>
-</section>
-<!--call to action section-->
-<section class="sidermargins pb-80 pt-80  color-overlay--grey">
-
-	<div class="container large-container">
-		<div class="row">
-			<div class="col-md-9 col-sm-9 ">
-			<div class="column-wrapper--left">
-				<div class="bl-quote call-to-action ">
-					<h2 class="call-to-action__subtitle">Let's make something great together</h2>
-					<p class="call-to-action__title">Get in touch with us and send some basic info for a quick quote
-					</p>
 				</div>
-			</div>
-
-			</div>
-			<div class="col-md-3 col-sm-3">
-				<div class="column-wrapper--right">
-					<div class="bl-quote ">
-						<a href="mailto:draw2code@gmail.com" class="ag_btn btn btn-lg btn-lined lined-dark btn--square call-to-action--btn ">draw2code@gmail.com</a>
+				<div class="col-md-4 col-sm-4">
+					<div class="column-wrapper">
+						<div class="ag-iconbox ag-iconbox--style3">
+							<div class="ag-iconbox__icon-wrapper">
+								<span class="ag-iconbox__icon icon-layers"></span>
+							</div>
+							<div class="ag-iconbox__content-wrapper">
+								<div class="ag-iconbox__title-wrapper">
+									<h3 class="ag-iconbox__title">GLOBAL COMPLIANCE</h3>
+								</div>
+								<div class="ag-iconbox__wrapper ag-iconbox__desc-wrapper">
+									<p class="ag-iconbox__desc">Built for international markets. We ensure ISTA, ASTM, FDA, and regional compliance across every packaging specification we deliver.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="column-wrapper">
+						<div class="ag-iconbox ag-iconbox--style3">
+							<div class="ag-iconbox__icon-wrapper">
+								<span class="ag-iconbox__icon icon-webdesign"></span>
+							</div>
+							<div class="ag-iconbox__content-wrapper">
+								<div class="ag-iconbox__title-wrapper">
+									<h3 class="ag-iconbox__title">ZERO-DEFECT STANDARD</h3>
+								</div>
+								<div class="ag-iconbox__wrapper ag-iconbox__desc-wrapper">
+									<p class="ag-iconbox__desc">We don't ship until it's production-perfect. Multi-stage quality audits, color-match verification, and structural stress testing are standard on every build.</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-<footer>
+	<!-- CTA -->
+	<section class="sidermargins pb-80 pt-80 color-overlay--grey scroll-reveal">
+		<div class="container large-container">
+			<div class="row">
+				<div class="col-md-9 col-sm-9">
+					<div class="column-wrapper--left">
+						<div class="bl-quote call-to-action">
+							<h2 class="call-to-action__subtitle">Ready to Start Your Engineering Project?</h2>
+							<p class="call-to-action__title">Share your product requirements and our team will deliver a detailed technical proposal and timeline.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="column-wrapper--right">
+						<div class="bl-quote">
+							<a href="{{ route('contact') }}" class="d2c-btn d2c-btn--dark">Get a Quote</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-	<div class="row gutter-0">
+	<footer>
+		<div class="row gutter-0">
 			<div class="col-md-8 col-sm-8 pt-100 pb-100">
 				<div class="footer-first-col">
 					<div class="row">
 						<div class="col-md-6 col-sm-6">
-							<p>
-									Draw2Code, Block-D <br>
-								DLF IT Park, Chandigarh, 160101, India<br>
-									Copyright © 2025 Draw2Code. All Rights Reserved.
-							</p>
+							<p>Draw2Code, Block-D<br>DLF IT Park, Chandigarh, 160101, India<br>Copyright &copy; 2025 Draw2Code. All Rights Reserved.</p>
+							<p style="color:rgba(255,255,255,0.45);font-size:11px;text-transform:uppercase;letter-spacing:.05em;margin-top:10px;">Designed &amp; Developed by Engineers</p>
 						</div>
 						<div class="col-md-6 col-sm-6">
-							<p>
-								<a href="tel:(245)410-245-8784"><span>+(91) 93-771-20007</span></a>
-								<br>
-								<span>
-									<a href="mailto:draw2code@gmail.com"><span>draw2code@gmail.com</span></a>
-								</span>
-							</p>
+							<p><a href="tel:+919377120007"><span>+(91) 93-771-20007</span></a><br><span><a href="mailto:draw2code@gmail.com"><span>draw2code@gmail.com</span></a></span></p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-4  pt-100 pb-100 dark-bg">
+			<div class="col-md-4 col-sm-4 pt-100 pb-100 dark-bg">
 				<div class="footer-last-col social-container">
 					<ul class="footer-social">
-						<li class="footer-social__item "><a href="https://www.facebook.com/draw2code"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li class="footer-social__item"><a href="https://twitter.com/draw2code"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li class="footer-social__item"><a href="https://plus.google.com/u/0/100554868355797924341"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li class="footer-social__item"><a href="https://www.facebook.com/draw2code" aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="footer-social__item"><a href="https://twitter.com/draw2code" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="footer-social__item"><a href="https://plus.google.com/u/0/100554868355797924341" aria-label="Google Plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
+	</footer>
 
-</footer>
+</div>
 
-
-
-</div><!-- /.#page_wrapper -->
-
-<a href="#" class="totop">TOP</a> <!--/.totop -->
-
-
- <!--Revolution slider script-->
-
-<script>
-var revapi1,
-tpj=jQuery;
-
-tpj(document).ready(function() {
-if(tpj("#rev_slider_1_1").revolution == undefined){
-revslider_showDoubleJqueryError("#rev_slider_1_1");
-}else{
-revapi1 = tpj("#rev_slider_1_1").show().revolution({
-	sliderType:"standard",
-	jsFileLocation:"addons/assets/js/",
-	sliderLayout:"auto",
-	dottedOverlay:"none",
-	delay:9000,
-	navigation: {
-		keyboardNavigation:"off",
-		keyboard_direction: "horizontal",
-		mouseScrollNavigation:"off",
-					mouseScrollReverse:"default",
-		onHoverStop:"off",
-		bullets: {
-			enable:true,
-			hide_onmobile:true,
-			hide_under:1100,
-			style:"uranus",
-			hide_onleave:false,
-			direction:"vertical",
-							container:"layergrid",
-			h_align:"right",
-			v_align:"center",
-			h_offset:50,
-			v_offset:0,
-			space:5,
-			tmp:'<span class="tp-bullet-inner"></span>'
-		}
-	},
-	responsiveLevels:[1240,1024,778,480],
-	visibilityLevels:[1240,1024,778,480],
-	gridwidth:[1600,1024,778,480],
-	gridheight:[868,768,960,720],
-	lazyType:"smart",
-	parallax: {
-		type:"scroll",
-		origo:"slidercenter",
-		speed:400,
-		speedbg:0,
-		speedls:0,
-		levels:[5,10,15,20,25,30,35,40,45,46,47,48,49,50,51,55],
-	},
-	shadow:0,
-	spinner:"spinner2",
-	stopLoop:"on",
-	stopAfterLoops:0,
-	stopAtSlide:1,
-	shuffle:"off",
-	autoHeight:"off",
-	disableProgressBar:"on",
-	hideThumbsOnMobile:"off",
-	hideSliderAtLimit:0,
-	hideCaptionAtLimit:0,
-	hideAllCaptionAtLilmit:0,
-	debugMode:false,
-	fallbacks: {
-		simplifyAll:"off",
-		nextSlideOnWindowFocus:"off",
-		disableFocusListener:false,
-	}
-});
-}
-
-});	/*ready*/
-</script>
-
-
+<a href="#" class="totop">TOP</a>
 
 <script src="js/plugins/bootstrap.min.js"></script>
-
-<!--isotope script-->
 <script src="addons/isotope/isotope.pkgd.min.js"></script>
 <script src="addons/imagesloaded.pkgd.min.js"></script>
-<!--popup script-->
 <script src="addons/Magnific-Popup/jquery.magnific-popup.js"></script>
-<!--count script-->
 <script src="addons/jquery.countTo.js"></script>
-<!-- Main template script -->
 <script src="js/script.js"></script>
-
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+	var revealElements = document.querySelectorAll('.scroll-reveal');
+	if (revealElements.length && 'IntersectionObserver' in window) {
+		var observer = new IntersectionObserver(function(entries) {
+			entries.forEach(function(entry) {
+				if (entry.isIntersecting) { entry.target.classList.add('is-revealed'); observer.unobserve(entry.target); }
+			});
+		}, { threshold: 0.12 });
+		revealElements.forEach(function(el) { observer.observe(el); });
+	}
+});
+</script>
 </body>
 </html>
-
-<!-- Localized -->
