@@ -116,7 +116,7 @@
 							<div class="title-wrapper">
 								<div class="title-block title-block--contact">
 									<h3 class="title-block__subtitle" style="color:rgba(255,255,255,0.5);">NEW BUSINESS</h3>
-									<p class="title-block__title txt-light">Engineering Consultation<br><a href="mailto:draw2code@gmail.com" style="color:#C8102E;">draw2code@gmail.com</a></p>
+									<p class="title-block__title txt-light">Engineering Consultation<br><a href="mailto:draw2code@gmail.com" style="color:#2563EB;">draw2code@gmail.com</a></p>
 								</div>
 							</div>
 						</div>

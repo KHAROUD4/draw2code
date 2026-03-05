@@ -155,7 +155,7 @@
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
-								<div class="media-container media-container--process" style="background-color:rgba(200,16,46,0.15);">
+								<div class="media-container media-container--process" style="background-color:rgba(37,99,235,0.15);">
 									<div class="title-wrapper">
 										<div class="title-block title-block--process2">
 											<h4 class="title-block__title txt-light">4.</h4>

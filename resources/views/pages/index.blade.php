@@ -118,19 +118,24 @@
 	@php
 		$heroSlides = [
 			[
-				'heading' => 'Global Packaging Solutions. Engineered to Scale.',
-				'subheading' => 'From concept to container, shelf to shipment. We design and manufacture high-impact packaging built for the US and international markets.',
-				'image' => 'images/slide01.jpg',
+				'heading' => 'Packaging Engineered for Shelf Impact.',
+				'subheading' => 'Bold, production-ready packaging that turns heads at retail. From structural prototyping to vibrant print-ready artwork -- we build it all.',
+				'image' => 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hero_01A-OT6Nacd2dHIpElfmFjGp3a1VGhSeSl.jpg',
 			],
 			[
-				'heading' => 'We Design. We Build. We Deploy.',
-				'subheading' => 'We don\'t just create visuals. We engineer the entire product lifecycle -- from structural design to production-ready files to global fulfillment.',
-				'image' => 'images/slide02.jpg',
+				'heading' => 'From Blueprint to Production Line.',
+				'subheading' => 'We engineer the entire lifecycle -- from die-cut prototypes and structural testing to high-volume production runs and global fulfillment.',
+				'image' => 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hero_01E-u3EcCgaqG7daQg8IhgAgAHUWuhBlgd.jpg',
+			],
+			[
+				'heading' => 'Brand Systems Built to Scale.',
+				'subheading' => 'Cohesive visual identities engineered across every touchpoint -- packaging, digital, and retail. Premium brands trust our precision.',
+				'image' => 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hero_01C-V8h149TAOjCDf7k6j2852MRHUJ3iMU.jpg',
 			],
 			[
 				'heading' => 'Engineer-Led. Precision-Built.',
-				'subheading' => 'Every product we ship is designed and developed by engineers. Technical viability meets world-class aesthetics -- no handoff gaps, no compromises.',
-				'image' => 'images/hero_01.jpg',
+				'subheading' => 'Every product we ship is designed by engineers. Structural accuracy meets world-class aesthetics -- from die-line to deployment.',
+				'image' => 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hero_01D-R1UlOhATqR8RPpFvCw4cRhHnsR6uUk.jpg',
 			],
 		];
 	@endphp
@@ -138,7 +143,7 @@
 	<!-- HERO SLIDER -->
 	<section class="hero-carousel" aria-label="Hero slideshow">
 		@foreach ($heroSlides as $index => $slide)
-			<div class="hero-slide {{ $index === 0 ? 'active' : '' }}" style="background-image: linear-gradient(160deg, rgba(2, 12, 27, 0.72), rgba(2, 12, 27, 0.52)), url('{{ $slide['image'] }}');" role="group" aria-label="Slide {{ $index + 1 }}">
+			<div class="hero-slide {{ $index === 0 ? 'active' : '' }}" style="background-image: linear-gradient(160deg, rgba(27, 40, 56, 0.78), rgba(27, 40, 56, 0.52)), url('{{ $slide['image'] }}');" role="group" aria-label="Slide {{ $index + 1 }}">
 				<div class="hero-slide__content">
 					<span class="hero-slide__label">Engineer-Led Product Studio</span>
 					<h1 class="hero-slide__title">{{ $slide['heading'] }}</h1>
