@@ -170,6 +170,26 @@
 		</div>
 	</section>
 
+	<section class="sidermargins pb-80 pt-40 scroll-reveal">
+		<div class="container large-container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="title-block title-block--center">
+						<h4 class="title-block__subtitle txt-dark-transparent">HOW WE ARE DIFFERENT</h4>
+						<h2 class="title-block__title txt-dark">We Build for Your Brand, Not Just a Deliverable</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-offset-1 col-lg-10 col-md-12">
+					<p class="txt-center" style="font-size:19px;line-height:1.8;color:#5f6a75;">
+						We take time to understand your brand voice, customer journey, and growth goals before we create anything. Our team works like an extension of your business, guiding decisions that help your brand perform in the real market. We treat every project as if it were our own brand, with full ownership and long-term thinking.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- VALUE PROPS -->
 	<section class="pb-100 pt-100 scroll-reveal">
 		<div class="container large-container">
@@ -182,10 +202,10 @@
 							</div>
 							<div class="ag-iconbox__content-wrapper">
 								<div class="ag-iconbox__title-wrapper">
-									<h3 class="ag-iconbox__title">ENGINEER-LED RIGOR</h3>
+									<h3 class="ag-iconbox__title">100% Feedback Guarantee</h3>
 								</div>
 								<div class="ag-iconbox__wrapper ag-iconbox__desc-wrapper">
-									<p class="ag-iconbox__desc">Every project is managed by engineers with deep domain expertise in structural packaging, materials science, and production engineering.</p>
+									<p class="ag-iconbox__desc">Transparent revisions with clear accountability. On-time delivery, plus a 24x7 support system so you always have direct help when you need it.</p>
 								</div>
 							</div>
 						</div>

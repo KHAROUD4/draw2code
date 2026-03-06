@@ -119,17 +119,17 @@
 			[
 				'heading' => 'Global Packaging Solutions. Engineered to Scale.',
 				'subheading' => 'From concept to container, shelf to shipment. We design and manufacture high-impact packaging built for the US and international markets.',
-				'image' => 'images/hero_01.jpg',
+				'image' => 'images/hero_01A.jpg',
 			],
 			[
 				'heading' => 'We Design. We Build. We Deploy.',
 				'subheading' => 'We don\'t just create visuals. We engineer the entire product lifecycle -- from structural design to production-ready files to global fulfillment.',
-				'image' => 'images/hero_02.jpg',
+				'image' => 'images/hero_01C.jpg',
 			],
 			[
 				'heading' => 'Engineer-Led. Precision-Built.',
 				'subheading' => 'Every product we ship is designed and developed by engineers. Technical viability meets world-class aesthetics -- no handoff gaps, no compromises.',
-				'image' => 'images/hero_03.jpg',
+				'image' => 'images/hero_01D.jpg',
 			],
 		];
 	@endphp
@@ -137,13 +137,13 @@
 	<!-- HERO SLIDER -->
 	<section class="hero-carousel" aria-label="Hero slideshow">
 		@foreach ($heroSlides as $index => $slide)
-			<div class="hero-slide {{ $index === 0 ? 'active' : '' }}" style="background-image: linear-gradient(160deg, rgba(2, 12, 27, 0.72), rgba(2, 12, 27, 0.52)), url('{{ $slide['image'] }}');" role="group" aria-label="Slide {{ $index + 1 }}">
+			<div class="hero-slide {{ $index === 0 ? 'active' : '' }}" style="background-image: linear-gradient(160deg, rgba(2, 12, 27, 0.45), rgba(2, 12, 27, 0.24)), url('{{ $slide['image'] }}'); background-position:center center;" role="group" aria-label="Slide {{ $index + 1 }}">
 				<div class="hero-slide__content">
 					<h1 class="hero-slide__title">{{ $slide['heading'] }}</h1>
 					<p class="hero-slide__subtitle">{{ $slide['subheading'] }}</p>
 					<div class="hero-slide__actions">
-						<a href="{{ route('work') }}" class="d2c-btn d2c-btn--primary">View Engineering Case Studies</a>
-						<a href="{{ route('contact') }}" class="d2c-btn d2c-btn--outline">Request a Quote</a>
+						<a href="#services-overview" class="d2c-btn d2c-btn--primary js-scroll-services">Explore Our Services</a>
+						<button type="button" class="d2c-btn d2c-btn--outline js-open-quote-modal">Request a Quote</button>
 					</div>
 					<div class="trust-badge glass-panel">
 						<span class="trust-badge__icon">
@@ -171,7 +171,7 @@
 						<div class="col-md-4 col-sm-12">
 							<div class="title-block">
 								<h4 class="title-block__subtitle txt-light-transparent txt-thin">What We Do</h4>
-								<h2 class="txt-large txt-light">Packaging &mdash; Engineering &mdash; Digital &mdash; Deployment</h2>
+								<h2 class="txt-large txt-light">Branding &amp; Packaging &mdash; UI UX &mdash; Development &mdash; Marketing</h2>
 							</div>
 						</div>
 						<div class="col-md-8 col-sm-12">
@@ -181,33 +181,43 @@
 									<p class="bl-quote__title transparent-light operational-readiness">Based locally in Chandigarh, operating globally. Our systems are optimized for US-based logistics, FDA/ISTA compliance, and international engineering standards.</p>
 								</div>
 								<div class="row home-page-first">
-									<div class="col-md-4 col-sm-12">
-										<div class="ag-iconbox ag-iconbox--style1 clearfix">
-											<div class="ag-iconbox__icon-wrapper">
-												<span class="ag-iconbox__icon icon-development"></span>
-											</div>
-											<div class="ag-iconbox__content-wrapper">
-												<h3 class="ag-iconbox__title txt-light">Structural Engineering</h3>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-4 col-sm-12">
+									<div class="col-md-3 col-sm-6">
 										<div class="ag-iconbox ag-iconbox--style1 clearfix">
 											<div class="ag-iconbox__icon-wrapper">
 												<span class="ag-iconbox__icon icon-webdesign"></span>
 											</div>
 											<div class="ag-iconbox__content-wrapper">
-												<h3 class="ag-iconbox__title txt-light">Brand &amp; Packaging Design</h3>
+												<h3 class="ag-iconbox__title txt-light">Branding &amp; Packaging</h3>
 											</div>
 										</div>
 									</div>
-									<div class="col-md-4 col-sm-12">
+									<div class="col-md-3 col-sm-6">
 										<div class="ag-iconbox ag-iconbox--style1 clearfix">
 											<div class="ag-iconbox__icon-wrapper">
 												<span class="ag-iconbox__icon icon-layers"></span>
 											</div>
 											<div class="ag-iconbox__content-wrapper">
-												<h3 class="ag-iconbox__title txt-light">Production &amp; Fulfillment</h3>
+												<h3 class="ag-iconbox__title txt-light">UI UX</h3>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-6">
+										<div class="ag-iconbox ag-iconbox--style1 clearfix">
+											<div class="ag-iconbox__icon-wrapper">
+												<span class="ag-iconbox__icon icon-development"></span>
+											</div>
+											<div class="ag-iconbox__content-wrapper">
+												<h3 class="ag-iconbox__title txt-light">Development</h3>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-6">
+										<div class="ag-iconbox ag-iconbox--style1 clearfix">
+											<div class="ag-iconbox__icon-wrapper">
+												<span class="ag-iconbox__icon icon-layers"></span>
+											</div>
+											<div class="ag-iconbox__content-wrapper">
+												<h3 class="ag-iconbox__title txt-light">Marketing</h3>
 											</div>
 										</div>
 									</div>
@@ -224,14 +234,14 @@
 	</section>
 
 	<!-- PORTFOLIO GRID -->
-	<section class="sidermargins pb-160 sec-portfolio scroll-reveal">
+	<section class="sidermargins pb-80 sec-portfolio home-portfolio-clean scroll-reveal">
 		<div class="container large-container large-container_grid">
 			<div class="row">
 				<div class="grid ag-gridGallery-jstrigger" data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>
 					<div class="grid-item grid-item--width2 gallery-item">
 						<div class="grid-item-wrapper">
-							<a class="portfolio-link" href="images/hero_prtf01.jpg"></a>
-							<div class="ag-gridGallery__img-container"><img src="images/hero_prtf01.jpg" alt="Custom corrugated packaging design" title="Engineering Case Study"></div>
+							<a class="portfolio-link" href="images/hero_01E.jpg"></a>
+							<div class="ag-gridGallery__img-container"><img src="images/hero_01E.jpg" alt="Custom corrugated packaging design" title="Engineering Case Study"></div>
 							<div class="portfolio-overlay"><div class="portfolio-inner"><i class="ag-icon glyphicon glyphicon-picture ag-icon__circled-icon"></i></div></div>
 						</div>
 					</div>
@@ -406,13 +416,13 @@
 	</section>
 
 	<!-- OUR CAPABILITIES -->
-	<section class="sidermargins pb-100 pt-100 d2c-dark-surface scroll-reveal">
+	<section id="services-overview" class="sidermargins pb-100 pt-100 d2c-dark-surface scroll-reveal">
 		<div class="container large-container">
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="title-block pb-80">
-						<h4 class="title-block__subtitle txt-light-transparent">OUR ENGINEERING CAPABILITIES</h4>
-						<h2 class="title-block__title txt-light">Full-Lifecycle Product Engineering</h2>
+						<h4 class="title-block__subtitle txt-light-transparent">OUR SERVICES</h4>
+						<h2 class="title-block__title txt-light">Services We Provide</h2>
 					</div>
 				</div>
 			</div>
@@ -423,7 +433,7 @@
 							<div class="d2c-service-media" style="background-image:url('images/test2.jpg');"></div>
 							<div class="ag-iconbox__icon-wrapper"><span class="ag-iconbox__icon icon-webdesign"></span></div>
 							<div class="ag-iconbox__content-wrapper">
-								<h3 class="ag-iconbox__title txt-light">Packaging &amp; Structural Design</h3>
+								<h3 class="ag-iconbox__title txt-light">Packaging and Branding</h3>
 								<p class="ag-iconbox__desc">Custom corrugated, rigid box, flexible pouches, and retail-ready displays. Engineered dielines with precise tolerances for automated production lines.</p>
 							</div>
 						</div>
@@ -495,7 +505,30 @@
 		</div>
 	</section>
 
-	<!-- ENGINEER-LED TRUST SECTION -->
+	<!-- CALL TO ACTION -->
+	<section class="sidermargins color-overlay--grey pb-80 pt-80 scroll-reveal">
+		<div class="container large-container">
+			<div class="row">
+				<div class="col-md-9 col-sm-9">
+					<div class="column-wrapper--left">
+						<div class="bl-quote call-to-action">
+							<h2 class="call-to-action__subtitle">Ready to Start Your Project?</h2>
+							<p class="call-to-action__title">Tell us about your goals and get a clear proposal with timeline and budget options within 24 hours.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<div class="column-wrapper--right">
+						<div class="bl-quote">
+							<button type="button" class="d2c-btn d2c-btn--dark js-open-quote-modal">Start Your Project</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- BUILT DIFFERENT -->
 	<section class="sidermargins pb-80 pt-80 scroll-reveal">
 		<div class="container large-container">
 			<div class="row">
@@ -532,29 +565,6 @@
 						<div class="d2c-feature-card__body">
 							<h3 class="latest_posts-title" style="font-style:normal;font-weight:700;margin-top:16px;">Concept to Container</h3>
 							<p style="color:#666;font-size:14px;line-height:1.7;">We handle the full lifecycle: ideation, structural prototyping, graphic design, production management, and global deployment.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- CALL TO ACTION -->
-	<section class="sidermargins color-overlay--grey pb-80 pt-80 scroll-reveal">
-		<div class="container large-container">
-			<div class="row">
-				<div class="col-md-9 col-sm-9">
-					<div class="column-wrapper--left">
-						<div class="bl-quote call-to-action">
-							<h2 class="call-to-action__subtitle">Ready to Engineer Your Next Product?</h2>
-							<p class="call-to-action__title">Tell us about your project and receive a comprehensive engineering assessment and quote within 24 hours.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-3">
-					<div class="column-wrapper--right">
-						<div class="bl-quote">
-							<a href="{{ route('contact') }}" class="d2c-btn d2c-btn--dark">Start Your Project</a>
 						</div>
 					</div>
 				</div>
@@ -599,6 +609,54 @@
 		</div>
 	</footer>
 
+</div>
+
+<div id="quoteModal" class="d2c-modal-overlay" aria-hidden="true">
+	<div class="d2c-modal-panel" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
+		<button type="button" class="d2c-modal-close js-close-quote-modal" aria-label="Close quote form">&times;</button>
+		<h2 id="quoteModalTitle" class="d2c-modal-title">Tell Us About You</h2>
+		<form class="d2c-modal-form" method="post" action="{{ route('contact.submit') }}">
+			@csrf
+			<input type="text" name="name" class="d2c-modal-input" placeholder="Your Name*" required>
+			<div class="d2c-modal-grid-2">
+				<input type="email" name="email" class="d2c-modal-input" placeholder="Email*" required>
+				<input type="text" name="phone" class="d2c-modal-input" placeholder="Phone Number">
+			</div>
+			<input type="text" name="whatsapp" class="d2c-modal-input" placeholder="Skype ID/Whatsapp No.">
+			<h3 class="d2c-modal-subtitle">Tell Us About Your Project</h3>
+			<input type="text" name="message" class="d2c-modal-input" placeholder="What's your project all about?*" required>
+			<h3 class="d2c-modal-subtitle">What Are You Looking For?*</h3>
+			<div class="d2c-modal-checkbox-grid">
+				<label><input type="checkbox" name="interests[]" value="Branding and Packaging"> Branding and Packaging</label>
+				<label><input type="checkbox" name="interests[]" value="Creating a Mobile App"> Creating a Mobile App</label>
+				<label><input type="checkbox" name="interests[]" value="Web Development"> Web Development</label>
+				<label><input type="checkbox" name="interests[]" value="Dedicated Team Service"> Dedicated Team Service</label>
+				<label><input type="checkbox" name="interests[]" value="SEO/PPC/SMM"> SEO/PPC/SMM</label>
+				<label><input type="checkbox" name="interests[]" value="Partnership Opportunities"> Partnership Opportunities</label>
+			</div>
+			<div class="d2c-modal-grid-2">
+				<select name="ag-budget" class="d2c-modal-input" required>
+					<option value="">Select your budget range*</option>
+					<option>$500 - $2,000</option>
+					<option>$2,000 - $5,000</option>
+					<option>$5,000 - $10,000</option>
+					<option>$10,000+</option>
+				</select>
+				<select name="start_timeline" class="d2c-modal-input" required>
+					<option value="">When do you want to get started?*</option>
+					<option>Immediately</option>
+					<option>Within 2 weeks</option>
+					<option>Within 1 month</option>
+					<option>Just exploring</option>
+				</select>
+			</div>
+			<input type="text" name="source" class="d2c-modal-input" placeholder="How did you hear about us?">
+			<div class="d2c-modal-feedback" aria-live="polite"></div>
+			<div class="d2c-modal-actions">
+				<button type="submit" class="d2c-btn d2c-btn--primary">Send Request</button>
+			</div>
+		</form>
+	</div>
 </div>
 
 <a href="#" class="totop">TOP</a>
@@ -647,6 +705,89 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	startTimer();
+
+	// Scroll to services section
+	var servicesBtn = document.querySelector('.js-scroll-services');
+	if (servicesBtn) {
+		servicesBtn.addEventListener('click', function(e) {
+			e.preventDefault();
+			var target = document.getElementById('services-overview');
+			if (target) {
+				target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			}
+		});
+	}
+
+	// Quote modal open/close
+	var quoteModal = document.getElementById('quoteModal');
+	var openQuoteBtns = document.querySelectorAll('.js-open-quote-modal');
+	var closeQuoteBtns = document.querySelectorAll('.js-close-quote-modal');
+
+	function openQuoteModal() {
+		if (!quoteModal) return;
+		quoteModal.classList.add('is-open');
+		quoteModal.setAttribute('aria-hidden', 'false');
+		document.body.classList.add('d2c-modal-open');
+	}
+
+	function closeQuoteModal() {
+		if (!quoteModal) return;
+		quoteModal.classList.remove('is-open');
+		quoteModal.setAttribute('aria-hidden', 'true');
+		document.body.classList.remove('d2c-modal-open');
+	}
+
+	openQuoteBtns.forEach(function(btn) {
+		btn.addEventListener('click', openQuoteModal);
+	});
+	closeQuoteBtns.forEach(function(btn) {
+		btn.addEventListener('click', closeQuoteModal);
+	});
+	if (quoteModal) {
+		quoteModal.addEventListener('click', function(e) {
+			if (e.target === quoteModal) closeQuoteModal();
+		});
+	}
+	var quoteForm = quoteModal ? quoteModal.querySelector('.d2c-modal-form') : null;
+	var quoteFeedback = quoteModal ? quoteModal.querySelector('.d2c-modal-feedback') : null;
+	if (quoteForm) {
+		quoteForm.addEventListener('submit', function(e) {
+			e.preventDefault();
+			var formData = new FormData(quoteForm);
+			var csrfToken = formData.get('_token');
+			fetch(quoteForm.getAttribute('action'), {
+				method: 'POST',
+				headers: {
+					'Accept': 'application/json',
+					'X-Requested-With': 'XMLHttpRequest',
+					'X-CSRF-TOKEN': csrfToken
+				},
+				body: formData
+			}).then(function(response) {
+				return response.json();
+			}).then(function(result) {
+				if (result.success) {
+					if (quoteFeedback) {
+						quoteFeedback.textContent = 'Request sent successfully. Our team will contact you shortly.';
+						quoteFeedback.classList.add('is-success');
+					}
+					quoteForm.reset();
+					setTimeout(closeQuoteModal, 1200);
+				} else if (quoteFeedback) {
+					quoteFeedback.textContent = 'Please check your form details and try again.';
+					quoteFeedback.classList.remove('is-success');
+				}
+			}).catch(function() {
+				if (quoteFeedback) {
+					quoteFeedback.textContent = 'Unable to send right now. Please try again in a moment.';
+					quoteFeedback.classList.remove('is-success');
+				}
+			});
+		});
+	}
+	document.addEventListener('keydown', function(e) {
+		if (e.key === 'Escape') closeQuoteModal();
+	});
 
 	// Scroll reveal animation
 	var revealElements = document.querySelectorAll('.scroll-reveal');
