@@ -63,7 +63,6 @@
 									<img class="logo-img site-logo-img" src="img-assets/logo.png" alt="Draw2Code" title="Draw2Code">
 								</a>
 							</h1>
-							<p class="logo-tagline">Packaging &amp; Product Engineering Powerhouse.</p>
 						</div>
 					</div>
 					<div class="fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-col-right site-header-main-right">
@@ -94,11 +93,10 @@
 		<div class="media-wrapper">
 			<div class="media-container media-header">
 				<div class="container-overlay">
-					<div class="bg-source bg-source--image" style="background-image: url(images/hero_03.jpg);"></div>
+					<div class="bg-source bg-source--image" style="background-image: url(images/hero_04.jpg);"></div>
 					<div class="bg-source img-overlay"></div>
 				</div>
 				<div class="media-container-title txt-center">
-					<span class="hero-slide__label" style="margin-bottom:20px;">Engineering Portfolio</span>
 					<h1 class="txt-light">From Concept to Global Deployment</h1>
 					<p class="work-hero-subtext">A showcase of engineer-led packaging and digital product case studies -- built for performance, compliance, and market readiness.</p>
 				</div>
@@ -120,7 +118,7 @@
 						'category' => 'packaging',
 					],
 					[
-						'image' => 'images/test2.jpg',
+						'image' => 'images/slide01.jpg',
 						'title' => 'E-Commerce Fulfillment System',
 						'scope' => 'Packaging Architecture + ISTA Compliance + Logistics',
 						'category' => 'engineering',
@@ -138,13 +136,13 @@
 						'category' => 'packaging',
 					],
 					[
-						'image' => 'images/portf_03.jpg',
+						'image' => 'images/slide02.jpg',
 						'title' => 'Digital Product Platform',
 						'scope' => 'UX Engineering + Frontend Development + API Integration',
 						'category' => 'digital',
 					],
 					[
-						'image' => 'images/portf_01.jpg',
+						'image' => 'images/contact.jpg',
 						'title' => 'Global CPG Packaging Refresh',
 						'scope' => 'Dieline Engineering + Color Management + Global Rollout',
 						'category' => 'packaging',
@@ -219,7 +217,8 @@
 						</div>
 						<div class="col-md-6 col-sm-6">
 							<p>
-								<a href="tel:+919377120007"><span>+(91) 93-771-20007</span></a><br>
+								<a href="tel:+919814567979"><span>India: +(91) 9814567979</span></a><br>
+								<a href="tel:+15878877354"><span>Canada: 1(587) 887-7354</span></a><br>
 								<span><a href="mailto:draw2code@gmail.com"><span>draw2code@gmail.com</span></a></span>
 							</p>
 						</div>

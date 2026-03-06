@@ -62,7 +62,6 @@
 									<img class="logo-img site-logo-img" src="img-assets/logo.png" alt="Draw2Code" title="Draw2Code">
 								</a>
 							</h1>
-							<p class="logo-tagline">Packaging &amp; Product Engineering Powerhouse.</p>
 						</div>
 					</div>
 					<div class="fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-col-right site-header-main-right">
@@ -93,11 +92,10 @@
 		<div class="media-wrapper">
 			<div class="media-container media-header">
 				<div class="container-overlay">
-					<div class="bg-source bg-source--image" style="background-image: url(images/hero_04.jpg);"></div>
+					<div class="bg-source bg-source--image" style="background-image: url(images/hero_07.jpg);"></div>
 					<div class="bg-source img-overlay"></div>
 				</div>
 				<div class="media-container-title txt-center">
-					<span class="hero-slide__label" style="margin-bottom:20px;">Premium Engineering Consultation</span>
 					<h1 class="txt-light">Start Your Project</h1>
 					<p class="work-hero-subtext">Tell us about your packaging, product, or digital engineering needs. Our team responds within 24 hours.</p>
 				</div>
@@ -116,7 +114,7 @@
 							<div class="title-wrapper">
 								<div class="title-block title-block--contact">
 									<h3 class="title-block__subtitle" style="color:rgba(255,255,255,0.5);">NEW BUSINESS</h3>
-									<p class="title-block__title txt-light">Engineering Consultation<br><a href="mailto:draw2code@gmail.com" style="color:#C8102E;">draw2code@gmail.com</a></p>
+									<p class="title-block__title txt-light">Engineering Consultation<br><a href="mailto:draw2code@gmail.com" style="color:#1BAFE0;">draw2code@gmail.com</a></p>
 								</div>
 							</div>
 						</div>
@@ -127,7 +125,10 @@
 						<div class="title-wrapper">
 							<div class="title-block title-block--contact">
 								<h3 class="title-block__subtitle txt-grey">GENERAL ENQUIRIES</h3>
-								<p class="title-block__title txt-dark">+(91) 93-771-20007</p>
+								<p class="title-block__title txt-dark">
+									India: +(91) 9814567979<br>
+									Canada: 1(587) 887-7354
+								</p>
 							</div>
 						</div>
 					</div>
@@ -185,10 +186,10 @@
 					<div class="form-group">
 						<label for="budget" class="label-control">Project Investment</label>
 						<select id="budget" name="ag-budget" class="ag-form-input select-control ag-fancy-form-select">
+							<option value="$500 - $2,000">$500 - $2,000</option>
+							<option value="$2,000 - $5,000">$2,000 - $5,000</option>
 							<option value="$5,000 - $10,000">$5,000 - $10,000</option>
-							<option value="$10,000 - $25,000">$10,000 - $25,000</option>
-							<option value="$25,000 - $50,000">$25,000 - $50,000</option>
-							<option value="$50,000+">$50,000+</option>
+							<option value="$10,000+">$10,000+</option>
 						</select>
 					</div>
 					<div class="hg-form-component">
@@ -214,7 +215,11 @@
 							<p style="color:rgba(255,255,255,0.45);font-size:11px;text-transform:uppercase;letter-spacing:.05em;margin-top:10px;">Designed &amp; Developed by Engineers</p>
 						</div>
 						<div class="col-md-6 col-sm-6">
-							<p><a href="tel:+919377120007"><span>+(91) 93-771-20007</span></a><br><span><a href="mailto:draw2code@gmail.com"><span>draw2code@gmail.com</span></a></span></p>
+							<p>
+								<a href="tel:+919814567979"><span>India: +(91) 9814567979</span></a><br>
+								<a href="tel:+15878877354"><span>Canada: 1(587) 887-7354</span></a><br>
+								<span><a href="mailto:draw2code@gmail.com"><span>draw2code@gmail.com</span></a></span>
+							</p>
 						</div>
 					</div>
 				</div>

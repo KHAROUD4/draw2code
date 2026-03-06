@@ -62,7 +62,6 @@
 									<img class="logo-img site-logo-img" src="img-assets/logo.png" alt="Draw2Code" title="Draw2Code">
 								</a>
 							</h1>
-							<p class="logo-tagline">Packaging &amp; Product Engineering Powerhouse.</p>
 						</div>
 					</div>
 					<div class="fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-col-right site-header-main-right">
@@ -93,11 +92,10 @@
 		<div class="media-wrapper">
 			<div class="media-container media-header">
 				<div class="container-overlay">
-					<div class="bg-source bg-source--image" style="background-image: url(images/hero_02.jpg);"></div>
+					<div class="bg-source bg-source--image" style="background-image: url(images/hero_05.jpg);"></div>
 					<div class="bg-source img-overlay"></div>
 				</div>
 				<div class="media-container-title txt-center">
-					<span class="hero-slide__label" style="margin-bottom:20px;">About Our Studio</span>
 					<h1 class="txt-light">The Engineering Studio</h1>
 					<p class="work-hero-subtext">Built by engineers. Trusted by global brands. We bring technical precision to every product we design, build, and deploy.</p>
 				</div>
@@ -269,7 +267,11 @@
 							<p style="color:rgba(255,255,255,0.45);font-size:11px;text-transform:uppercase;letter-spacing:.05em;margin-top:10px;">Designed &amp; Developed by Engineers</p>
 						</div>
 						<div class="col-md-6 col-sm-6">
-							<p><a href="tel:+919377120007"><span>+(91) 93-771-20007</span></a><br><span><a href="mailto:draw2code@gmail.com"><span>draw2code@gmail.com</span></a></span></p>
+							<p>
+								<a href="tel:+919814567979"><span>India: +(91) 9814567979</span></a><br>
+								<a href="tel:+15878877354"><span>Canada: 1(587) 887-7354</span></a><br>
+								<span><a href="mailto:draw2code@gmail.com"><span>draw2code@gmail.com</span></a></span>
+							</p>
 						</div>
 					</div>
 				</div>

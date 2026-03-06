@@ -62,7 +62,6 @@
 									<img class="logo-img site-logo-img" src="img-assets/logo.png" alt="Draw2Code" title="Draw2Code">
 								</a>
 							</h1>
-							<p class="logo-tagline">Packaging &amp; Product Engineering Powerhouse.</p>
 						</div>
 					</div>
 					<div class="fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-col-right site-header-main-right">
@@ -93,11 +92,10 @@
 		<div class="media-wrapper">
 			<div class="media-container media-header">
 				<div class="container-overlay">
-					<div class="bg-source bg-source--image" style="background-image: url(images/hero_05.jpg);"></div>
+					<div class="bg-source bg-source--image" style="background-image: url(images/hero_06.jpg);"></div>
 					<div class="bg-source img-overlay"></div>
 				</div>
 				<div class="media-container-title txt-center">
-					<span class="hero-slide__label" style="margin-bottom:20px;">Engineering Methodology</span>
 					<h1 class="txt-light">Our Process</h1>
 					<p class="work-hero-subtext">A systematic, engineer-led approach to every project. Four phases. Zero guesswork.</p>
 				</div>
@@ -120,9 +118,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row process-points">
 							<div class="col-md-3 col-sm-6">
-								<div class="media-container media-container--process">
+								<div class="media-container media-container--process process-point-card">
 									<div class="title-wrapper">
 										<div class="title-block title-block--process">
 											<h4 class="title-block__title">1.</h4>
@@ -133,7 +131,7 @@
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
-								<div class="media-container media-container--process">
+								<div class="media-container media-container--process process-point-card">
 									<div class="title-wrapper">
 										<div class="title-block title-block--process">
 											<h4 class="title-block__title">2.</h4>
@@ -144,7 +142,7 @@
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
-								<div class="media-container media-container--process">
+								<div class="media-container media-container--process process-point-card">
 									<div class="title-wrapper">
 										<div class="title-block title-block--process">
 											<h4 class="title-block__title">3.</h4>
@@ -155,9 +153,9 @@
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
-								<div class="media-container media-container--process" style="background-color:rgba(200,16,46,0.15);">
+								<div class="media-container media-container--process process-point-card process-point-card--active">
 									<div class="title-wrapper">
-										<div class="title-block title-block--process2">
+										<div class="title-block title-block--process">
 											<h4 class="title-block__title txt-light">4.</h4>
 											<h3 class="title-block__subtitle txt-light">Deploy</h3>
 											<p class="txt-light">Production oversight, quality audits, vendor coordination, and global logistics. We manage the build until your product is in-market and performing.</p>
@@ -264,7 +262,11 @@
 							<p style="color:rgba(255,255,255,0.45);font-size:11px;text-transform:uppercase;letter-spacing:.05em;margin-top:10px;">Designed &amp; Developed by Engineers</p>
 						</div>
 						<div class="col-md-6 col-sm-6">
-							<p><a href="tel:+919377120007"><span>+(91) 93-771-20007</span></a><br><span><a href="mailto:draw2code@gmail.com"><span>draw2code@gmail.com</span></a></span></p>
+							<p>
+								<a href="tel:+919814567979"><span>India: +(91) 9814567979</span></a><br>
+								<a href="tel:+15878877354"><span>Canada: 1(587) 887-7354</span></a><br>
+								<span><a href="mailto:draw2code@gmail.com"><span>draw2code@gmail.com</span></a></span>
+							</p>
 						</div>
 					</div>
 				</div>

@@ -84,7 +84,6 @@
 									<img class="logo-img site-logo-img" src="img-assets/logo.png" alt="Draw2Code" title="Draw2Code">
 								</a>
 							</h1>
-							<p class="logo-tagline">Packaging &amp; Product Engineering Powerhouse.</p>
 						</div>
 					</div>
 					 <!-- Right column with navigation -->
@@ -120,17 +119,17 @@
 			[
 				'heading' => 'Global Packaging Solutions. Engineered to Scale.',
 				'subheading' => 'From concept to container, shelf to shipment. We design and manufacture high-impact packaging built for the US and international markets.',
-				'image' => 'images/slide01.jpg',
+				'image' => 'images/hero_01.jpg',
 			],
 			[
 				'heading' => 'We Design. We Build. We Deploy.',
 				'subheading' => 'We don\'t just create visuals. We engineer the entire product lifecycle -- from structural design to production-ready files to global fulfillment.',
-				'image' => 'images/slide02.jpg',
+				'image' => 'images/hero_02.jpg',
 			],
 			[
 				'heading' => 'Engineer-Led. Precision-Built.',
 				'subheading' => 'Every product we ship is designed and developed by engineers. Technical viability meets world-class aesthetics -- no handoff gaps, no compromises.',
-				'image' => 'images/hero_01.jpg',
+				'image' => 'images/hero_03.jpg',
 			],
 		];
 	@endphp
@@ -140,7 +139,6 @@
 		@foreach ($heroSlides as $index => $slide)
 			<div class="hero-slide {{ $index === 0 ? 'active' : '' }}" style="background-image: linear-gradient(160deg, rgba(2, 12, 27, 0.72), rgba(2, 12, 27, 0.52)), url('{{ $slide['image'] }}');" role="group" aria-label="Slide {{ $index + 1 }}">
 				<div class="hero-slide__content">
-					<span class="hero-slide__label">Engineer-Led Product Studio</span>
 					<h1 class="hero-slide__title">{{ $slide['heading'] }}</h1>
 					<p class="hero-slide__subtitle">{{ $slide['subheading'] }}</p>
 					<div class="hero-slide__actions">
@@ -232,8 +230,8 @@
 				<div class="grid ag-gridGallery-jstrigger" data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>
 					<div class="grid-item grid-item--width2 gallery-item">
 						<div class="grid-item-wrapper">
-							<a class="portfolio-link" href="images/portf_07.jpg"></a>
-							<div class="ag-gridGallery__img-container"><img src="images/portf_07.jpg" alt="Custom corrugated packaging design" title="Engineering Case Study"></div>
+							<a class="portfolio-link" href="images/hero_prtf01.jpg"></a>
+							<div class="ag-gridGallery__img-container"><img src="images/hero_prtf01.jpg" alt="Custom corrugated packaging design" title="Engineering Case Study"></div>
 							<div class="portfolio-overlay"><div class="portfolio-inner"><i class="ag-icon glyphicon glyphicon-picture ag-icon__circled-icon"></i></div></div>
 						</div>
 					</div>
@@ -422,6 +420,7 @@
 				<div class="col-md-4 col-sm-12">
 					<div class="column-wrapper--left">
 						<div class="ag-iconbox ag-iconbox--style2">
+							<div class="d2c-service-media" style="background-image:url('images/test2.jpg');"></div>
 							<div class="ag-iconbox__icon-wrapper"><span class="ag-iconbox__icon icon-webdesign"></span></div>
 							<div class="ag-iconbox__content-wrapper">
 								<h3 class="ag-iconbox__title txt-light">Packaging &amp; Structural Design</h3>
@@ -433,6 +432,7 @@
 				<div class="col-md-4 col-sm-12">
 					<div class="column-wrapper--left">
 						<div class="ag-iconbox ag-iconbox--style2">
+							<div class="d2c-service-media" style="background-image:url('images/portf_05.jpg');"></div>
 							<div class="ag-iconbox__icon-wrapper"><span class="ag-iconbox__icon icon-layers"></span></div>
 							<div class="ag-iconbox__content-wrapper">
 								<h3 class="ag-iconbox__title txt-light">Brand Identity &amp; Visual Systems</h3>
@@ -444,6 +444,7 @@
 				<div class="col-md-4 col-sm-12">
 					<div class="column-wrapper--left">
 						<div class="ag-iconbox ag-iconbox--style2">
+							<div class="d2c-service-media" style="background-image:url('images/portf_04.jpg');"></div>
 							<div class="ag-iconbox__icon-wrapper"><span class="ag-iconbox__icon icon-development"></span></div>
 							<div class="ag-iconbox__content-wrapper">
 								<h3 class="ag-iconbox__title txt-light">Digital Platform Development</h3>
@@ -457,6 +458,7 @@
 				<div class="col-md-4 col-sm-12">
 					<div class="column-wrapper--left">
 						<div class="ag-iconbox ag-iconbox--style2">
+							<div class="d2c-service-media" style="background-image:url('images/contact.jpg');"></div>
 							<div class="ag-iconbox__icon-wrapper"><span class="ag-iconbox__icon icon-development"></span></div>
 							<div class="ag-iconbox__content-wrapper">
 								<h3 class="ag-iconbox__title txt-light">Prototyping &amp; Production</h3>
@@ -468,6 +470,7 @@
 				<div class="col-md-4 col-sm-12">
 					<div class="column-wrapper--left">
 						<div class="ag-iconbox ag-iconbox--style2">
+							<div class="d2c-service-media" style="background-image:url('images/portf_07.jpg');"></div>
 							<div class="ag-iconbox__icon-wrapper"><span class="ag-iconbox__icon icon-webdesign"></span></div>
 							<div class="ag-iconbox__content-wrapper">
 								<h3 class="ag-iconbox__title txt-light">UX/UI &amp; Interface Engineering</h3>
@@ -479,6 +482,7 @@
 				<div class="col-md-4 col-sm-12">
 					<div class="column-wrapper--left">
 						<div class="ag-iconbox ag-iconbox--style2">
+							<div class="d2c-service-media" style="background-image:url('images/slide01.jpg');"></div>
 							<div class="ag-iconbox__icon-wrapper"><span class="ag-iconbox__icon icon-layers"></span></div>
 							<div class="ag-iconbox__content-wrapper">
 								<h3 class="ag-iconbox__title txt-light">Global Fulfillment &amp; Compliance</h3>
@@ -506,7 +510,7 @@
 			<div class="row">
 				<div class="col-sm-6 col-lg-4">
 					<div class="post-wrapper d2c-feature-card">
-						<img src="images/hero_07.jpg" width="370" height="200" alt="Quality engineering process" class="latest_posts-img" style="width:100%;height:auto;border-radius:2px;">
+						<img src="images/contact.jpg" width="370" height="200" alt="Quality engineering process" class="latest_posts-img" style="width:100%;height:auto;border-radius:2px;">
 						<div class="d2c-feature-card__body">
 							<h3 class="latest_posts-title" style="font-style:normal;font-weight:700;margin-top:16px;">Zero-Defect Engineering</h3>
 							<p style="color:#666;font-size:14px;line-height:1.7;">Every project undergoes rigorous QA -- from structural stress testing to color-match verification. We don't ship until it's production-perfect.</p>
@@ -515,7 +519,7 @@
 				</div>
 				<div class="col-sm-6 col-lg-4">
 					<div class="post-wrapper d2c-feature-card">
-						<img src="images/hero_04.jpg" width="370" height="200" alt="Global logistics and deployment" class="latest_posts-img" style="width:100%;height:auto;border-radius:2px;">
+						<img src="images/home_slide01.jpg" width="370" height="200" alt="Global logistics and deployment" class="latest_posts-img" style="width:100%;height:auto;border-radius:2px;">
 						<div class="d2c-feature-card__body">
 							<h3 class="latest_posts-title" style="font-style:normal;font-weight:700;margin-top:16px;">US Market-Ready</h3>
 							<p style="color:#666;font-size:14px;line-height:1.7;">Optimized for American retail standards: barcode compliance, sustainability certifications, and Amazon-ready packaging specifications.</p>
@@ -524,7 +528,7 @@
 				</div>
 				<div class="col-sm-6 col-lg-4">
 					<div class="post-wrapper d2c-feature-card">
-						<img src="images/hero_01.jpg" width="370" height="200" alt="End-to-end product lifecycle" class="latest_posts-img" style="width:100%;height:auto;border-radius:2px;">
+						<img src="images/portf_07.jpg" width="370" height="200" alt="End-to-end product lifecycle" class="latest_posts-img" style="width:100%;height:auto;border-radius:2px;">
 						<div class="d2c-feature-card__body">
 							<h3 class="latest_posts-title" style="font-style:normal;font-weight:700;margin-top:16px;">Concept to Container</h3>
 							<p style="color:#666;font-size:14px;line-height:1.7;">We handle the full lifecycle: ideation, structural prototyping, graphic design, production management, and global deployment.</p>
@@ -573,7 +577,9 @@
 						</div>
 						<div class="col-md-6 col-sm-6">
 							<p>
-								<a href="tel:+919377120007"><span>+(91) 93-771-20007</span></a>
+								<a href="tel:+919814567979"><span>India: +(91) 9814567979</span></a>
+								<br>
+								<a href="tel:+15878877354"><span>Canada: 1(587) 887-7354</span></a>
 								<br>
 								<span><a href="mailto:draw2code@gmail.com"><span>draw2code@gmail.com</span></a></span>
 							</p>
