@@ -35,4 +35,12 @@ return [
         ],
     ],
 
+    'instagram' => [
+        'enabled' => env('INSTAGRAM_ENABLED', false),
+        'user_id' => env('INSTAGRAM_USER_ID'),
+        'access_token' => env('INSTAGRAM_ACCESS_TOKEN'),
+        'graph_version' => env('INSTAGRAM_GRAPH_VERSION', 'v22.0'),
+        'cache_ttl' => env('INSTAGRAM_CACHE_TTL', 30),
+    ],
+
 ];

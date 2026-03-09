@@ -170,7 +170,7 @@
 		</div>
 	</section>
 
-	<section class="sidermargins pb-80 pt-40 scroll-reveal">
+	<section class="sidermargins pb-80 pt-80 scroll-reveal process-difference-section">
 		<div class="container large-container">
 			<div class="row">
 				<div class="col-sm-12">

@@ -171,14 +171,20 @@
 						<div class="col-md-4 col-sm-12">
 							<div class="title-block">
 								<h4 class="title-block__subtitle txt-light-transparent txt-thin">What We Do</h4>
-								<h2 class="txt-large txt-light">Branding &amp; Packaging &mdash; UI UX &mdash; Development &mdash; Marketing</h2>
+								<h2 class="txt-large txt-light what-we-do-lines">
+									<span>Branding &amp; Packaging</span>
+									<span>UI UX</span>
+									<span>Development</span>
+									<span>Marketing</span>
+								</h2>
 							</div>
 						</div>
 						<div class="col-md-8 col-sm-12">
 							<div class="quote-wrapper">
 								<div class="bl-quote">
-									<p class="bl-quote__title transparent-light">We are a full-service product engineering studio that specializes in packaging design, structural prototyping, and end-to-end deployment. From corrugated shipping solutions to retail-ready shelf displays, our engineer-led team delivers precision at every stage.</p>
-									<p class="bl-quote__title transparent-light operational-readiness">Based locally in Chandigarh, operating globally. Our systems are optimized for US-based logistics, FDA/ISTA compliance, and international engineering standards.</p>
+										<p class="bl-quote__title transparent-light">We design and produce custom packaging solutions for modern brands. From packaging design to final production, we help businesses create packaging that protects their products and strengthens their brand identity.</p>
+										<p class="bl-quote__title transparent-light">Our services include packaging design and production for corrugated shipping boxes, retail product packaging, and custom branded boxes. We work closely with trusted manufacturing partners to deliver high-quality packaging with efficient turnaround times.</p>
+										<p class="bl-quote__title transparent-light operational-readiness">Based in Chandigarh and working with clients globally, we combine design expertise with reliable production to deliver packaging that meets modern logistics and branding needs.</p>
 								</div>
 								<div class="row home-page-first">
 									<div class="col-md-3 col-sm-6">
@@ -269,9 +275,9 @@
 				</div>
 			</div>
 			<div class="ag-vertical-separator"></div>
-			<div class="txt-center">
-				<a href="{{ route('work') }}" class="ag_btn btn btn-lg btn-lined lined-dark btn--square call-to-action--btn d2c-btn--hover">View All Case Studies</a>
-			</div>
+				<div class="txt-center">
+					<a href="{{ route('work') }}" class="ag_btn btn btn-lg btn-lined lined-dark btn--square call-to-action--btn d2c-btn--hover">View Our Work</a>
+				</div>
 			<!-- COUNTER STATS -->
 			<div class="row">
 				<div class="col-sm-12"><div class="ag-separator"></div></div>
@@ -430,7 +436,7 @@
 				<div class="col-md-4 col-sm-12">
 					<div class="column-wrapper--left">
 						<div class="ag-iconbox ag-iconbox--style2">
-							<div class="d2c-service-media" style="background-image:url('images/test2.jpg');"></div>
+							<div class="d2c-service-media d2c-service-media--branding" style="background-image:url('images/branding.png');"></div>
 							<div class="ag-iconbox__icon-wrapper"><span class="ag-iconbox__icon icon-webdesign"></span></div>
 							<div class="ag-iconbox__content-wrapper">
 								<h3 class="ag-iconbox__title txt-light">Packaging and Branding</h3>
@@ -454,7 +460,7 @@
 				<div class="col-md-4 col-sm-12">
 					<div class="column-wrapper--left">
 						<div class="ag-iconbox ag-iconbox--style2">
-							<div class="d2c-service-media" style="background-image:url('images/portf_04.jpg');"></div>
+								<div class="d2c-service-media d2c-service-media--digital" style="background-image:url('images/digital.png');"></div>
 							<div class="ag-iconbox__icon-wrapper"><span class="ag-iconbox__icon icon-development"></span></div>
 							<div class="ag-iconbox__content-wrapper">
 								<h3 class="ag-iconbox__title txt-light">Digital Platform Development</h3>
@@ -468,7 +474,7 @@
 				<div class="col-md-4 col-sm-12">
 					<div class="column-wrapper--left">
 						<div class="ag-iconbox ag-iconbox--style2">
-							<div class="d2c-service-media" style="background-image:url('images/contact.jpg');"></div>
+								<div class="d2c-service-media d2c-service-media--prototype" style="background-image:url('images/prototype.png');"></div>
 							<div class="ag-iconbox__icon-wrapper"><span class="ag-iconbox__icon icon-development"></span></div>
 							<div class="ag-iconbox__content-wrapper">
 								<h3 class="ag-iconbox__title txt-light">Prototyping &amp; Production</h3>
@@ -492,7 +498,7 @@
 				<div class="col-md-4 col-sm-12">
 					<div class="column-wrapper--left">
 						<div class="ag-iconbox ag-iconbox--style2">
-							<div class="d2c-service-media" style="background-image:url('images/slide01.jpg');"></div>
+								<div class="d2c-service-media d2c-service-media--global" style="background-image:url('images/global.png');"></div>
 							<div class="ag-iconbox__icon-wrapper"><span class="ag-iconbox__icon icon-layers"></span></div>
 							<div class="ag-iconbox__content-wrapper">
 								<h3 class="ag-iconbox__title txt-light">Global Fulfillment &amp; Compliance</h3>
@@ -527,6 +533,36 @@
 			</div>
 		</div>
 	</section>
+
+	@php($instagramPosts = $instagramPosts ?? [])
+	@if (count($instagramPosts))
+	<section class="sidermargins pb-80 pt-40 scroll-reveal">
+		<div class="container large-container">
+			<div class="title-block title-block--center pb-40">
+				<h4 class="title-block__subtitle txt-dark-transparent">LATEST FROM INSTAGRAM</h4>
+				<h2 class="title-block__title txt-dark">Behind the Build</h2>
+				<p class="work-hero-subtext">Fresh updates from our packaging and product delivery pipeline.</p>
+			</div>
+			<div class="row instagram-feed-row">
+				@foreach ($instagramPosts as $post)
+					<div class="col-md-4 col-sm-6">
+						<a class="instagram-card" href="{{ $post['permalink'] }}" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram post">
+							<div class="instagram-card__media">
+								<img src="{{ $post['image_url'] }}" alt="{{ $post['caption'] ? \Illuminate\Support\Str::limit($post['caption'], 80) : 'Instagram post by Draw2Code' }}">
+								<div class="instagram-card__overlay">
+									<span><i class="fa fa-instagram" aria-hidden="true"></i> View on Instagram</span>
+								</div>
+							</div>
+							@if (!empty($post['caption']))
+								<p class="instagram-card__caption">{{ \Illuminate\Support\Str::limit($post['caption'], 110) }}</p>
+							@endif
+						</a>
+					</div>
+				@endforeach
+			</div>
+		</div>
+	</section>
+	@endif
 
 	<!-- BUILT DIFFERENT -->
 	<section class="sidermargins pb-80 pt-80 scroll-reveal">

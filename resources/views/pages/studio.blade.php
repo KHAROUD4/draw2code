@@ -131,23 +131,24 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12">
-					<div class="fxb media-container--video">
-						<div class="container-overlay">
-							<div class="bg-source bg-source--video" style="background-image: url(images/home_slide01.jpg);"></div>
-							<div class="bg-source video-overlay"></div>
-						</div>
-						<a class="media-container-title txt-center media-container__link ag__playVideo" href="#" data-lightbox="iframe">
-							<div class="circleanim-svg">
-								<svg height="108" width="108" xmlns="http://www.w3.org/2000/svg">
-									<circle stroke-opacity="0.1" fill="#FFFFFF" stroke-width="5" cx="54" cy="54" r="48" class="circleanim-svg__circle-back"></circle>
-									<circle stroke-width="5" fill="#FFFFFF" cx="54" cy="54" r="48" class="circleanim-svg__circle-front" transform="rotate(50 54 54)"></circle>
-									<path d="M62.1556183,56.1947505 L52,62.859375 C50.6192881,63.7654672 49.5,63.1544098 49.5,61.491212 L49.5,46.508788 C49.5,44.8470803 50.6250889,44.2383396 52,45.140625 L62.1556183,51.8052495 C64.0026693,53.0173767 63.9947588,54.9878145 62.1556183,56.1947505 Z" fill="#FFFFFF"></path>
-								</svg>
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<div class="fxb media-container--video studio-workvideo-shell">
+							<div class="studio-workvideo-mask">
+								<video class="studio-workvideo-el" muted loop playsinline preload="metadata">
+									<source src="video/workvideo.mp4" type="video/mp4">
+								</video>
+								<button type="button" class="studio-workvideo-trigger media-container-title txt-center media-container__link" aria-label="Play studio video preview">
+									<div class="circleanim-svg">
+										<svg height="108" width="108" xmlns="http://www.w3.org/2000/svg">
+											<circle stroke-opacity="0.1" fill="#FFFFFF" stroke-width="5" cx="54" cy="54" r="48" class="circleanim-svg__circle-back"></circle>
+											<circle stroke-width="5" fill="#FFFFFF" cx="54" cy="54" r="48" class="circleanim-svg__circle-front" transform="rotate(50 54 54)"></circle>
+											<path d="M62.1556183,56.1947505 L52,62.859375 C50.6192881,63.7654672 49.5,63.1544098 49.5,61.491212 L49.5,46.508788 C49.5,44.8470803 50.6250889,44.2383396 52,45.140625 L62.1556183,51.8052495 C64.0026693,53.0173767 63.9947588,54.9878145 62.1556183,56.1947505 Z" fill="#FFFFFF"></path>
+										</svg>
+									</div>
+								</button>
 							</div>
-						</a>
+						</div>
 					</div>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -308,6 +309,23 @@ document.addEventListener('DOMContentLoaded', function () {
 			});
 		}, { threshold: 0.12 });
 		revealElements.forEach(function(el) { observer.observe(el); });
+	}
+
+	var studioVideo = document.querySelector('.studio-workvideo-el');
+	var videoTrigger = document.querySelector('.studio-workvideo-trigger');
+	if (studioVideo && videoTrigger) {
+		var startPreview = function() {
+			studioVideo.play().catch(function() {});
+		};
+		var stopPreview = function() {
+			studioVideo.pause();
+			studioVideo.currentTime = 0;
+		};
+
+		videoTrigger.addEventListener('mouseenter', startPreview);
+		videoTrigger.addEventListener('mouseleave', stopPreview);
+		videoTrigger.addEventListener('focus', startPreview);
+		videoTrigger.addEventListener('blur', stopPreview);
 	}
 });
 </script>

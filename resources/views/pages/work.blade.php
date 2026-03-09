@@ -105,93 +105,99 @@
 		<div class="ag-mask"><div class="skew-mask"></div></div>
 	</div>
 
-	<!-- CASE STUDIES GRID -->
-	<div class="container large-container pb-80 pt-80">
-		<div class="portfolio-filter">
+		<!-- CASE STUDIES GRID -->
+		<section class="work-portfolio-section pb-80 pt-80 scroll-reveal">
+			<div class="work-portfolio-bg"></div>
+			<div class="container large-container">
+				<div class="work-portfolio-head">
+					<h2 class="work-portfolio-title">Featured Portfolio</h2>
+					<p class="work-portfolio-copy">Modern packaging systems and digital products crafted with strategic design, technical precision, and market-ready execution.</p>
+				</div>
 
-			@php
-				$caseStudies = [
-					[
-						'image' => 'images/portf_07.jpg',
-						'title' => 'Premium Corrugated Display',
-						'scope' => 'Structural Engineering + Graphic Design + Production',
-						'category' => 'packaging',
-						'service' => 'branding-packaging',
-					],
-					[
-						'image' => 'images/slide01.jpg',
-						'title' => 'E-Commerce Fulfillment System',
-						'scope' => 'Packaging Architecture + ISTA Compliance + Logistics',
-						'category' => 'engineering',
-						'service' => 'development',
-					],
-					[
-						'image' => 'images/portf_05.jpg',
-						'title' => 'Retail Brand Identity System',
-						'scope' => 'Brand Strategy + Visual Identity + Packaging Suite',
-						'category' => 'branding',
-						'service' => 'branding-packaging',
-					],
-					[
-						'image' => 'images/portf_04.jpg',
-						'title' => 'Subscription Box Engineering',
-						'scope' => 'Structural Prototyping + Unboxing UX + Production',
-						'category' => 'packaging',
-						'service' => 'ui-ux',
-					],
-					[
-						'image' => 'images/slide02.jpg',
-						'title' => 'Digital Product Platform',
-						'scope' => 'UX Engineering + Frontend Development + API Integration',
-						'category' => 'digital',
-						'service' => 'development',
-					],
-					[
-						'image' => 'images/contact.jpg',
-						'title' => 'Global CPG Packaging Refresh',
-						'scope' => 'Dieline Engineering + Color Management + Global Rollout',
-						'category' => 'packaging',
-						'service' => 'marketing',
-					],
-				];
-			@endphp
+				@php
+					$caseStudies = [
+						[
+							'image' => 'images/hero_01A.jpg',
+							'title' => 'Premium Corrugated Display',
+							'scope' => 'Branding and Packaging + Production System',
+							'category' => 'packaging',
+							'service' => 'branding-packaging',
+						],
+						[
+							'image' => 'images/hero_01C.jpg',
+							'title' => 'E-Commerce Fulfillment System',
+							'scope' => 'Product UI + Checkout UX + Fulfillment Automation',
+							'category' => 'digital',
+							'service' => 'development',
+						],
+						[
+							'image' => 'images/hero_01D.jpg',
+							'title' => 'Retail Brand Identity System',
+							'scope' => 'Brand Strategy + Packaging and Branding Assets',
+							'category' => 'branding',
+							'service' => 'branding-packaging',
+						],
+						[
+							'image' => 'images/hero_01E.jpg',
+							'title' => 'Subscription Box Engineering',
+							'scope' => 'Box Experience + UI UX + Conversion Flow',
+							'category' => 'packaging',
+							'service' => 'ui-ux',
+						],
+						[
+							'image' => 'images/slide02.jpg',
+							'title' => 'Digital Product Platform',
+							'scope' => 'UI UX + Frontend Development + API Integration',
+							'category' => 'digital',
+							'service' => 'development',
+						],
+						[
+							'image' => 'images/contact.jpg',
+							'title' => 'Global CPG Packaging Refresh',
+							'scope' => 'Packaging Refresh + Campaign Launch + Global Rollout',
+							'category' => 'packaging',
+							'service' => 'marketing',
+						],
+					];
+				@endphp
 
-			<div class="work-tabs" role="tablist" aria-label="Work categories">
-				<button class="work-tab is-active" data-tab="all" type="button">All</button>
-				<button class="work-tab" data-tab="branding-packaging" type="button">Branding and Packaging</button>
-				<button class="work-tab" data-tab="ui-ux" type="button">UI UX</button>
-				<button class="work-tab" data-tab="development" type="button">Development</button>
-				<button class="work-tab" data-tab="marketing" type="button">Marketing</button>
+				<div class="work-tabs work-tabs--modern" role="tablist" aria-label="Work categories">
+					<button class="work-tab is-active" data-tab="all" type="button">All</button>
+					<button class="work-tab" data-tab="branding-packaging" type="button">Branding and Packaging</button>
+					<button class="work-tab" data-tab="ui-ux" type="button">UI UX</button>
+					<button class="work-tab" data-tab="development" type="button">Development</button>
+					<button class="work-tab" data-tab="marketing" type="button">Marketing</button>
+				</div>
+
+				<ul class="work-grid-modern">
+					@foreach ($caseStudies as $index => $study)
+					<li class="work-item work-item--modern" data-category="{{ $study['category'] }}" data-service="{{ $study['service'] }}" style="--stagger: {{ $index }};">
+						<div class="grid-item-wrapper work-card">
+							<a class="portfolio-link" href="#"></a>
+							<div class="ag-gridGallery__img-container work-card__media">
+								<img src="{{ $study['image'] }}" alt="{{ $study['title'] }}" title="{{ $study['title'] }}">
+							</div>
+							<div class="portfolio-overlay work-card__overlay">
+								<div class="portfolio-inner">
+									<i class="ag-icon glyphicon glyphicon-link ag-icon__circled-icon"></i> View Project
+								</div>
+							</div>
+							<div class="case-study-meta work-card__meta">
+								<div class="work-card__service">{{ strtoupper(str_replace('-', ' ', $study['service'])) }}</div>
+								<h3 class="case-study-meta__title">{{ $study['title'] }}</h3>
+								<p class="case-study-meta__scope">{{ $study['scope'] }}</p>
+								<div class="project-flow-labels">
+									<span>Designed</span>
+									<span>Built</span>
+									<span>Deployed</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					@endforeach
+				</ul>
 			</div>
-
-			<ul class="grid" data-isotope='{ "itemSelector": ".ptf-item", "layoutMode": "fitRows"}'>
-				@foreach ($caseStudies as $study)
-				<li class="ptf-item {{ $study['category'] }} work-item" data-category="{{ $study['category'] }}" data-service="{{ $study['service'] }}">
-					<div class="grid-item-wrapper">
-						<a class="portfolio-link" href="#"></a>
-						<div class="ag-gridGallery__img-container">
-							<img src="{{ $study['image'] }}" alt="{{ $study['title'] }}" title="{{ $study['title'] }}">
-						</div>
-						<div class="portfolio-overlay">
-							<div class="portfolio-inner">
-								<i class="ag-icon glyphicon glyphicon-link ag-icon__circled-icon"></i>
-							</div>
-						</div>
-						<div class="case-study-meta">
-							<h3 class="case-study-meta__title">{{ $study['title'] }}</h3>
-							<p class="case-study-meta__scope">{{ $study['scope'] }}</p>
-							<div class="project-flow-labels">
-								<span>Designed</span>
-								<span>Built</span>
-								<span>Deployed</span>
-							</div>
-						</div>
-					</div>
-				</li>
-				@endforeach
-			</ul>
-		</div>
-	</div>
+		</section>
 
 	<!-- CTA -->
 	<section class="sidermargins pb-80 pt-80 color-overlay--grey scroll-reveal">
@@ -277,38 +283,49 @@ document.addEventListener('DOMContentLoaded', function () {
 		revealElements.forEach(function(el) { observer.observe(el); });
 	}
 
-	var tabs = document.querySelectorAll('.work-tab');
-	var items = document.querySelectorAll('.work-item');
-	if (tabs.length && items.length) {
-		function setTab(tab) {
-			tabs.forEach(function(btn) {
-				btn.classList.toggle('is-active', btn.getAttribute('data-tab') === tab);
-			});
-			items.forEach(function(item) {
-				var service = item.getAttribute('data-service');
-				var show = tab === 'all' || service === tab;
-				if (show) {
-					item.style.display = '';
-					requestAnimationFrame(function() {
+		var tabs = document.querySelectorAll('.work-tab');
+		var items = document.querySelectorAll('.work-item');
+		if (tabs.length && items.length) {
+			function revealVisibleItems() {
+				items.forEach(function(item, index) {
+					if (item.style.display === 'none' || item.classList.contains('is-hidden')) return;
+					item.style.transitionDelay = (index * 70) + 'ms';
+					item.classList.add('is-visible');
+				});
+			}
+
+			function setTab(tab) {
+				tabs.forEach(function(btn) {
+					btn.classList.toggle('is-active', btn.getAttribute('data-tab') === tab);
+				});
+				items.forEach(function(item) {
+					var service = item.getAttribute('data-service');
+					var show = tab === 'all' || service === tab;
+					if (show) {
+						item.style.display = '';
 						item.classList.remove('is-hidden');
-					});
-				} else {
-					item.classList.add('is-hidden');
-					setTimeout(function() {
-						if (item.classList.contains('is-hidden')) {
-							item.style.display = 'none';
-						}
-					}, 280);
-				}
+						requestAnimationFrame(function() {
+							item.classList.add('is-visible');
+						});
+					} else {
+						item.classList.remove('is-visible');
+						item.classList.add('is-hidden');
+						setTimeout(function() {
+							if (item.classList.contains('is-hidden')) {
+								item.style.display = 'none';
+							}
+						}, 330);
+					}
+				});
+				setTimeout(revealVisibleItems, 60);
+			}
+			tabs.forEach(function(tabBtn) {
+				tabBtn.addEventListener('click', function() {
+					setTab(tabBtn.getAttribute('data-tab'));
+				});
 			});
+			setTab('all');
 		}
-		tabs.forEach(function(tabBtn) {
-			tabBtn.addEventListener('click', function() {
-				setTab(tabBtn.getAttribute('data-tab'));
-			});
-		});
-		setTab('all');
-	}
 });
 </script>
 

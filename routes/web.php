@@ -1,9 +1,10 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'pages.index')->name('home');
+Route::get('/', HomeController::class)->name('home');
 Route::view('/studio', 'pages.studio')->name('studio');
 Route::view('/our-process', 'pages.our-process')->name('our-process');
 Route::view('/work', 'pages.work')->name('work');
