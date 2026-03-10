@@ -118,9 +118,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="row process-points">
-							<div class="col-md-3 col-sm-6">
-								<div class="media-container media-container--process process-point-card">
+							<div class="row process-points">
+								<div class="col-md-3 col-sm-6">
+									<div class="media-container media-container--process process-point-card process-point-card--active">
 									<div class="title-wrapper">
 										<div class="title-block title-block--process">
 											<h4 class="title-block__title">1.</h4>
@@ -129,9 +129,9 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="media-container media-container--process process-point-card">
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="media-container media-container--process process-point-card">
 									<div class="title-wrapper">
 										<div class="title-block title-block--process">
 											<h4 class="title-block__title">2.</h4>
@@ -140,9 +140,9 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="media-container media-container--process process-point-card">
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="media-container media-container--process process-point-card">
 									<div class="title-wrapper">
 										<div class="title-block title-block--process">
 											<h4 class="title-block__title">3.</h4>
@@ -151,9 +151,9 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="media-container media-container--process process-point-card process-point-card--active">
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="media-container media-container--process process-point-card">
 									<div class="title-wrapper">
 										<div class="title-block title-block--process">
 											<h4 class="title-block__title txt-light">4.</h4>
@@ -250,10 +250,10 @@
 	</section>
 
 	<!-- CTA -->
-	<section class="sidermargins pb-80 pt-80 color-overlay--grey scroll-reveal">
+	<section class="sidermargins pb-80 pt-80 color-overlay--grey scroll-reveal cta-inline-section">
 		<div class="container large-container">
-			<div class="row">
-				<div class="col-md-9 col-sm-9">
+			<div class="row cta-inline-row">
+				<div class="col-md-8 col-sm-8">
 					<div class="column-wrapper--left">
 						<div class="bl-quote call-to-action">
 							<h2 class="call-to-action__subtitle">Ready to Start Your Engineering Project?</h2>
@@ -261,10 +261,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-3">
+				<div class="col-md-4 col-sm-4 cta-inline-action">
 					<div class="column-wrapper--right">
 						<div class="bl-quote">
-							<a href="{{ route('contact') }}" class="d2c-btn d2c-btn--dark">Get a Quote</a>
+							<a href="{{ route('contact') }}#project-brief" class="d2c-btn d2c-btn--dark">Get a Quote</a>
 						</div>
 					</div>
 				</div>
@@ -323,6 +323,18 @@ document.addEventListener('DOMContentLoaded', function () {
 			});
 		}, { threshold: 0.12 });
 		revealElements.forEach(function(el) { observer.observe(el); });
+	}
+
+	var processCards = document.querySelectorAll('.process-point-card');
+	if (processCards.length) {
+		processCards.forEach(function(card) {
+			card.addEventListener('mouseenter', function() {
+				processCards.forEach(function(other) {
+					other.classList.remove('process-point-card--active');
+				});
+				card.classList.add('process-point-card--active');
+			});
+		});
 	}
 });
 </script>

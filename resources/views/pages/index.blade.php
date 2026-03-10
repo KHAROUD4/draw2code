@@ -55,7 +55,7 @@
 
 </head>
 
-<body>
+<body class="page-home">
     
    
 <div id="page_wrapper">
@@ -172,10 +172,10 @@
 							<div class="title-block">
 								<h4 class="title-block__subtitle txt-light-transparent txt-thin">What We Do</h4>
 								<h2 class="txt-large txt-light what-we-do-lines">
-									<span>Branding &amp; Packaging</span>
-									<span>UI UX</span>
-									<span>Development</span>
-									<span>Marketing</span>
+									<span><em>&rarr;</em> Branding &amp; Packaging</span>
+									<span><em>&rarr;</em> UI UX</span>
+									<span><em>&rarr;</em> Development</span>
+									<span><em>&rarr;</em> Marketing</span>
 								</h2>
 							</div>
 						</div>
@@ -276,7 +276,7 @@
 			</div>
 			<div class="ag-vertical-separator"></div>
 				<div class="txt-center">
-					<a href="{{ route('work') }}" class="ag_btn btn btn-lg btn-lined lined-dark btn--square call-to-action--btn d2c-btn--hover">View Our Work</a>
+					<a href="{{ route('work') }}#featured-portfolio" class="ag_btn btn btn-lg btn-lined lined-dark btn--square call-to-action--btn d2c-btn--hover">View Our Work</a>
 				</div>
 			<!-- COUNTER STATS -->
 			<div class="row">
@@ -512,10 +512,10 @@
 	</section>
 
 	<!-- CALL TO ACTION -->
-	<section class="sidermargins color-overlay--grey pb-80 pt-80 scroll-reveal">
+	<section class="sidermargins color-overlay--grey pb-80 pt-80 scroll-reveal home-cta-section">
 		<div class="container large-container">
-			<div class="row">
-				<div class="col-md-9 col-sm-9">
+			<div class="row home-cta-row">
+				<div class="col-md-8 col-sm-8">
 					<div class="column-wrapper--left">
 						<div class="bl-quote call-to-action">
 							<h2 class="call-to-action__subtitle">Ready to Start Your Project?</h2>
@@ -523,10 +523,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-3">
+				<div class="col-md-4 col-sm-4 home-cta-action">
 					<div class="column-wrapper--right">
 						<div class="bl-quote">
-							<button type="button" class="d2c-btn d2c-btn--dark js-open-quote-modal">Start Your Project</button>
+							<a href="{{ route('contact') }}#project-brief" class="d2c-btn d2c-btn--dark">Start Your Project</a>
 						</div>
 					</div>
 				</div>
@@ -579,7 +579,7 @@
 			<div class="row">
 				<div class="col-sm-6 col-lg-4">
 					<div class="post-wrapper d2c-feature-card">
-						<img src="images/contact.jpg" width="370" height="200" alt="Quality engineering process" class="latest_posts-img" style="width:100%;height:auto;border-radius:2px;">
+							<img src="images/zer.png" width="370" height="200" alt="Quality engineering process" class="latest_posts-img" style="width:100%;height:auto;border-radius:2px;">
 						<div class="d2c-feature-card__body">
 							<h3 class="latest_posts-title" style="font-style:normal;font-weight:700;margin-top:16px;">Zero-Defect Engineering</h3>
 							<p style="color:#666;font-size:14px;line-height:1.7;">Every project undergoes rigorous QA -- from structural stress testing to color-match verification. We don't ship until it's production-perfect.</p>

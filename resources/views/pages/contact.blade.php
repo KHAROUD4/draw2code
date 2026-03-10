@@ -164,7 +164,7 @@
 	</div>
 
 	<!-- CONTACT FORM -->
-	<div class="container large-container pb-100 pt-80 scroll-reveal">
+		<div id="project-brief" class="container large-container pb-100 pt-80 scroll-reveal">
 		<div class="row">
 			<div class="col-sm-12 txt-center" style="margin-bottom:40px;">
 				<h4 class="title-block__subtitle txt-dark-transparent">PROJECT BRIEF</h4>

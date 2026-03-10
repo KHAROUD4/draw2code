@@ -236,10 +236,10 @@
 	</section>
 
 	<!-- CTA -->
-	<section class="sidermargins pb-80 pt-80 color-overlay--grey scroll-reveal">
-		<div class="container large-container">
-			<div class="row">
-				<div class="col-md-9 col-sm-9">
+		<section class="sidermargins pb-80 pt-80 color-overlay--grey scroll-reveal cta-inline-section">
+			<div class="container large-container">
+				<div class="row cta-inline-row">
+					<div class="col-md-8 col-sm-8">
 					<div class="column-wrapper--left">
 						<div class="bl-quote call-to-action">
 							<h2 class="call-to-action__subtitle">Ready to Engineer Your Next Product?</h2>
@@ -247,10 +247,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-3">
+					<div class="col-md-4 col-sm-4 cta-inline-action">
 					<div class="column-wrapper--right">
 						<div class="bl-quote">
-							<a href="{{ route('contact') }}" class="d2c-btn d2c-btn--dark">Start Your Project</a>
+								<a href="{{ route('contact') }}#project-brief" class="d2c-btn d2c-btn--dark">Start Your Project</a>
 						</div>
 					</div>
 				</div>

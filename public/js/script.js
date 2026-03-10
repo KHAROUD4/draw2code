@@ -285,6 +285,135 @@
 			} else {
 				header.classList.remove('is-scrolled');
 			}
-		});
-	}
-})();
+			});
+		}
+
+		function initCustomCursor() {
+			var isTouch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+			var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+			if (isTouch || reducedMotion) return;
+
+			var outer = document.createElement('div');
+			outer.className = 'd2c-cursor d2c-cursor--outer';
+			var inner = document.createElement('div');
+			inner.className = 'd2c-cursor d2c-cursor--inner';
+			var label = document.createElement('span');
+			label.className = 'd2c-cursor__label';
+			label.textContent = '';
+			outer.appendChild(label);
+			document.body.appendChild(outer);
+			document.body.appendChild(inner);
+			document.body.classList.add('has-custom-cursor');
+
+			var targetX = window.innerWidth / 2;
+			var targetY = window.innerHeight / 2;
+			var x = targetX;
+			var y = targetY;
+
+			function setCursorText(text) {
+				label.textContent = text || '';
+				outer.classList.toggle('is-labeled', !!text);
+			}
+
+			document.addEventListener('mousemove', function (e) {
+				targetX = e.clientX;
+				targetY = e.clientY;
+				inner.style.transform = 'translate(' + targetX + 'px,' + targetY + 'px)';
+			});
+
+			document.addEventListener('mouseover', function (e) {
+				var el = e.target;
+				if (!el) return;
+				var interactive = el.closest('a,button,input,textarea,select,.d2c-btn,.ag_btn,.portfolio-link,.work-card,.studio-workvideo-trigger');
+				if (interactive) {
+					outer.classList.add('is-active');
+					if (interactive.closest('.portfolio-link,.work-card,.ag-gridGallery__img-container')) {
+						setCursorText('View');
+					} else if (interactive.closest('.d2c-btn,.ag_btn,button')) {
+						setCursorText('Open');
+					} else {
+						setCursorText('');
+					}
+				}
+			});
+
+			document.addEventListener('mouseout', function (e) {
+				var el = e.target;
+				if (!el) return;
+				var interactive = el.closest('a,button,input,textarea,select,.d2c-btn,.ag_btn,.portfolio-link,.work-card,.studio-workvideo-trigger');
+				if (interactive) {
+					outer.classList.remove('is-active');
+					setCursorText('');
+				}
+			});
+
+			document.addEventListener('mousedown', function () {
+				outer.classList.add('is-pressed');
+				inner.classList.add('is-pressed');
+			});
+
+			document.addEventListener('mouseup', function () {
+				outer.classList.remove('is-pressed');
+				inner.classList.remove('is-pressed');
+			});
+
+			(function animate() {
+				x += (targetX - x) * 0.18;
+				y += (targetY - y) * 0.18;
+				outer.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+				requestAnimationFrame(animate);
+			})();
+		}
+
+		function initPageTransitions() {
+			var overlay = document.createElement('div');
+			overlay.className = 'd2c-page-loader';
+			overlay.setAttribute('aria-hidden', 'true');
+			overlay.innerHTML =
+				'<div class="d2c-page-loader__inner">' +
+					'<img src="img-assets/logo.png" alt="Draw2Code" class="d2c-page-loader__logo">' +
+					'<div class="d2c-page-loader__bar"><span></span></div>' +
+				'</div>';
+			document.body.appendChild(overlay);
+
+			function showLoader() {
+				overlay.classList.add('is-active');
+			}
+
+			function hideLoader() {
+				overlay.classList.remove('is-active');
+			}
+
+			document.addEventListener('click', function (e) {
+				var link = e.target.closest('a');
+				if (!link) return;
+				var href = link.getAttribute('href') || '';
+
+				if (
+					link.target === '_blank' ||
+					link.hasAttribute('download') ||
+					href.startsWith('#') ||
+					href.startsWith('mailto:') ||
+					href.startsWith('tel:') ||
+					href.startsWith('javascript:')
+				) {
+					return;
+				}
+
+				try {
+					var url = new URL(link.href, window.location.origin);
+					if (url.origin !== window.location.origin) return;
+				} catch (_) {
+					return;
+				}
+
+				showLoader();
+			}, true);
+
+			window.addEventListener('beforeunload', showLoader);
+			window.addEventListener('pageshow', hideLoader);
+		}
+
+		initCustomCursor();
+		initPageTransitions();
+	})();

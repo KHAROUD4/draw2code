@@ -106,7 +106,7 @@
 	</div>
 
 		<!-- CASE STUDIES GRID -->
-		<section class="work-portfolio-section pb-80 pt-80 scroll-reveal">
+		<section id="featured-portfolio" class="work-portfolio-section pb-80 pt-80 scroll-reveal">
 			<div class="work-portfolio-bg"></div>
 			<div class="container large-container">
 				<div class="work-portfolio-head">
@@ -200,10 +200,10 @@
 		</section>
 
 	<!-- CTA -->
-	<section class="sidermargins pb-80 pt-80 color-overlay--grey scroll-reveal">
-		<div class="container large-container">
-			<div class="row">
-				<div class="col-md-9 col-sm-9">
+		<section class="sidermargins pb-80 pt-80 color-overlay--grey scroll-reveal cta-inline-section">
+			<div class="container large-container">
+				<div class="row cta-inline-row">
+					<div class="col-md-8 col-sm-8">
 					<div class="column-wrapper--left">
 						<div class="bl-quote call-to-action">
 							<h2 class="call-to-action__subtitle">Ready to Build Something Extraordinary?</h2>
@@ -211,10 +211,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-3">
+					<div class="col-md-4 col-sm-4 cta-inline-action">
 					<div class="column-wrapper--right">
 						<div class="bl-quote">
-							<a href="{{ route('contact') }}" class="d2c-btn d2c-btn--dark">Start Your Project</a>
+								<a href="{{ route('contact') }}#project-brief" class="d2c-btn d2c-btn--dark">Start Your Project</a>
 						</div>
 					</div>
 				</div>
@@ -270,6 +270,15 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+	if (window.location.hash === '#featured-portfolio') {
+		var portfolioSection = document.getElementById('featured-portfolio');
+		if (portfolioSection) {
+			setTimeout(function() {
+				portfolioSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			}, 80);
+		}
+	}
+
 	var revealElements = document.querySelectorAll('.scroll-reveal');
 	if (revealElements.length && 'IntersectionObserver' in window) {
 		var observer = new IntersectionObserver(function(entries) {
